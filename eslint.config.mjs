@@ -16,9 +16,8 @@ const eslintConfig = [
         "plugin:react-hooks/recommended",
         "next/typescript",
         "plugin:@next/next/recommended",
-        "plugin:eslint-plugin-react/recommended"
-
-
+        "plugin:eslint-plugin-react/recommended",
+        "plugin:eslint-prettier/recommended",
     ),
 ];
 
