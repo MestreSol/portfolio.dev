@@ -1,0 +1,15 @@
+datasource db {
+  provider  = "postgresql"
+  url       = "postgresql://postgres:90202d1f-add2-4b44-b4bf-9d018d52ede2@db.dgcrbtrzpnjnqoidfzwz.supabase.co:5432/postgres"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id Int @id @default(autoincrement())
+  email String @unique
+  displayName String
+}
+

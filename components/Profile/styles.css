@@ -3,7 +3,7 @@
   width: 25vw;
   height: 50vh;
   color: #000000;
-  position:relative;
+  position: relative;
 }
 
 .profile-header {
@@ -25,7 +25,7 @@
   border-radius: 50%;
   position: absolute;
   left: 130px;
-  top:15px;
+  top: 15px;
 }
 
 .profile-info {
