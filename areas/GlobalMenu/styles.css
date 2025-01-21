@@ -1,113 +1,82 @@
-.container {
-  display: flex;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  gap: 64px;
-  padding: 80px;
-  font-family: var(--font-geist-sans);
-}
-
 .MainMenu {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-  height: 60px;
-  background-color: #1e1e1e;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.BrandArea {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-
-.BrandArea img {
-  height: 40px;
-  margin-right: 10px;
-}
-
-.BrandArea h1 a {
-  margin-left: 10px;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.SearchArea {
-  display: flex;
   align-items: center;
+  width: 100vw;
+  height: 60px;
+  background-color: #06141b;
+  padding: 0 20px;
 }
 
-.SearchArea input {
-  width: 440px;
-  height: 30px;
-  padding: 0 10px;
-  border: none;
-  border-bottom: #fff 1px solid;
-  background-color: #1e1e1e;
+.Menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .MenuItens {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .MenuItens ul {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
-  padding: 20px;
-}
-
-.MenuItens ul li {
-  margin-right: 40px;
+  gap: 30px;
 }
 
 .MenuItens ul li a {
-  text-decoration: none;
   color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .UserArea {
-  position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .UserArea img {
+  width: 40px;
   height: 40px;
   border-radius: 50%;
-  cursor: pointer;
+  margin-right: 10px;
 }
 
-.UserArea .username {
-  margin-left: 10px;
+.username {
   color: #fff;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.UserArea .dropdown {
+.dropdown-content {
   display: none;
   position: absolute;
-  top: 50px;
-  right: 0;
-  background-color: #1e1e1e;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  border-radius: 4px;
+  background-color: #1e1f22;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-.UserArea:hover .dropdown {
-  display: block;
-}
-
-.UserArea .dropdown a {
-  display: block;
-  color: #fff;
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
   text-decoration: none;
-  padding: 5px 0;
+  display: block;
 }
 
-.UserArea .dropdown a:hover {
-  background-color: #333;
+.dropdown-content a:hover {
+  background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }

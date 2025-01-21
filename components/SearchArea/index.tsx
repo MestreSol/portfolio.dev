@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import "./styles.css";
 
 const SearchArea: React.FC = () => {
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState("");
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(event.target.value);
@@ -9,7 +10,7 @@ const SearchArea: React.FC = () => {
 
   const handleSearch = () => {
     // Implement search logic here
-    console.log('Searching for:', query);
+    console.log("Searching for:", query);
   };
 
   return (

@@ -1,9 +1,0 @@
-.container {
-  display: flex;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  padding-left: 30px;
-  padding-top: 30px;
-  font-family: var(--font-geist-sans);
-}

@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import "./styles.css";
 import { useState } from "react";
 import BrandArea from "@/components/BrandArea";
@@ -21,6 +22,7 @@ export default function GlobalMenu() {
 
   return (
     <nav className="MainMenu">
+      <div className="Menu">
         <BrandArea />
         <SearchArea />
         <div className="MenuItens">
@@ -49,6 +51,7 @@ export default function GlobalMenu() {
           ) : (
             <a href="/login">Login</a>
           )}
+        </div>
       </div>
     </nav>
   );
