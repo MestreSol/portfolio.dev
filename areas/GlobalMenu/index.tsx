@@ -21,7 +21,6 @@ export default function GlobalMenu() {
 
   return (
     <nav className="MainMenu">
-      <div className="container">
         <BrandArea />
         <SearchArea />
         <div className="MenuItens">
@@ -39,15 +38,17 @@ export default function GlobalMenu() {
               <img src={user.profileImage} alt="Profile" />
               <span className="username">{user.name.split(" ")[0]}</span>
               <div className="dropdown">
-                <a href="/profile">Profile</a>
-                <a href="/settings">Settings</a>
-                <a href="/logout">Logout</a>
+                <span>▼</span>
+                <div className="dropdown-content">
+                  <a href="/profile">Profile</a>
+                  <a href="/settings">Settings</a>
+                  <a href="/logout">Logout</a>
+                </div>
               </div>
             </>
           ) : (
             <a href="/login">Login</a>
           )}
-        </div>
       </div>
     </nav>
   );
