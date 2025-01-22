@@ -10,6 +10,9 @@
     "lint:fix": "next lint --fix",
     "format": "prettier --write ."
   },
+  "git": {
+    "pre-commit": "lint"
+  },
   "dependencies": {
     "@prisma/client": "^6.2.1",
     "dotenv": "^16.4.7",
