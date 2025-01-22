@@ -1,11 +1,11 @@
 'use client';
-
+import React from 'react';
 import ms from 'ms';
 import { useEffect, useRef, useState } from 'react';
 
 // https://github.com/streamich/react-use/blob/master/src/useInterval.ts
-const useInterval = (callback: Function, delay?: number | null) => {
-  const savedCallback = useRef<Function>(() => {});
+const useInterval = (callback: () => void, delay?: number | null) => {
+  const savedCallback = useRef<() => void>(() => {});
 
   useEffect(() => {
     savedCallback.current = callback;

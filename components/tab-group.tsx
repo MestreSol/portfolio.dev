@@ -1,3 +1,4 @@
+import React from 'react';
 import { Tab } from './tab';
 
 export type Item = {

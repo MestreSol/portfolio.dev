@@ -1,5 +1,7 @@
 'use client';
 
+import React from 'react';
+
 import type { Item } from './tab-group';
 import clsx from 'clsx';
 import Link from 'next/link';

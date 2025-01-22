@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { demos, type Item } from '../lib/demos';
 import { NextLogoDark } from '../components/next-logo';
 import Link from 'next/link';

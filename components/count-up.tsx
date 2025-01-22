@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { useCountUp } from 'use-count-up';
 
 const CountUp = ({

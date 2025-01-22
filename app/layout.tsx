@@ -1,3 +1,4 @@
+import React from 'react';
 import '@/styles/globals.css';
 import { AddressBar } from '@/components/addres-bar';
 import Byline from '@/components/byline';

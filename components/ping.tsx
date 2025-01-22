@@ -1,3 +1,4 @@
+import React from 'react';
 export function Ping() {
   return (
     <span className="flex h-[11px] w-[11px]">

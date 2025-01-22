@@ -1,3 +1,4 @@
+import React from 'react';
 import { Boundary } from './boundary';
 import CountUp from './count-up';
 import clsx from 'clsx';

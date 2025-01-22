@@ -1,3 +1,4 @@
+import React from 'react';
 import { RenderedTimeAgo } from './rendered-time-ago';
 
 export function RenderingInfo({

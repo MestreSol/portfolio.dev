@@ -1,5 +1,7 @@
 'use client';
 
+import React from 'react';
+
 export default function Footer({
   reactVersion,
   nextVersion,
@@ -9,7 +11,7 @@ export default function Footer({
 }) {
   return (
     <div className="col-start-2 col-end-4 mt-28 flex items-center justify-between">
-      <style jsx>
+      <style>
         {`
           .power-by {
             color: rgb(82 82 91);
