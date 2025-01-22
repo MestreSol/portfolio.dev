@@ -1,18 +1,30 @@
 import React from "react";
 import "./styles.css";
-export default function Profile() {
+import Image from "next/image";
+
+type Props = {
+  userName: string;
+  userDescription: string;
+  userFollowers: number;
+  userNodes: number;
+  userProjects: number;
+  userImage: string;
+  userWallpaper: string;
+};
+export default function Profile(props: Props) {
   return (
     <div className="profile">
       <div className="profile-header">
-        <img
-          src="https://placehold.co/400x400"
-          alt="CoverImage"
-          className="profile-cover"
+        <Image
+          src={props.userWallpaper}
+          alt={props.userName + "'s Wallpaper"}
         />
-        <img
-          src="https://i0.statig.com.br/bancodeimagens/ba/zu/9h/bazu9hysgxthlkdc23t2x1gqs.jpg"
-          alt="ProfileImage"
-          className="profile-avatar"
+        <Image
+          src={
+            "https://i0.statig.com.br/bancodeimagens/ba/zu/9h/bazu9hysgxthlkdc23t2x1gqs.jpg"
+          }
+          alt={"ProfileImage"}
+          className={"profile-avatar"}
         />
       </div>
       <div className="profile-info">

@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import Image from "next/image";
 
 export default function Logo() {
   function RenderLogo() {
@@ -12,7 +13,7 @@ export default function Logo() {
   }
   return (
     <div className="BrandArea">
-      <img className="logo" alt="Logo" src={RenderLogo()} />
+      <Image src={RenderLogo()} alt={"Portfy Logo"} />
       <h1>Potify</h1>
     </div>
   );
