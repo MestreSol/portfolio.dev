@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
-import { AddressBar } from "@/ui/addres-bar";
-import Byline from "@/ui/byline";
+import { AddressBar } from "@/components/addres-bar";
+import Byline from "@/components/byline";
 import { GlobalNav } from "@/ui/global-nav";
 import { Metadata } from "next";
 

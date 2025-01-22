@@ -1,7 +1,7 @@
 "use client";
 
 import { demos, type Item } from "../lib/demos";
-import { NextLogoDark } from "./next-logo";
+import { NextLogoDark } from "../components/next-logo";
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
