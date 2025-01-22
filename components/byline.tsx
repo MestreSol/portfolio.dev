@@ -18,7 +18,7 @@ export default function Byline() {
           >
             View code
           </a>
-          {" or "}
+          {' or '}
           <a
             className="underline decoration-dotted underline-offset-4 transition-colors hover:text-gray-300"
             href="https://vercel.com/templates/next.js/app-directory"

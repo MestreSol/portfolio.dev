@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { demos, type Item } from "../lib/demos";
-import { NextLogoDark } from "../components/next-logo";
-import Link from "next/link";
-import { useSelectedLayoutSegment } from "next/navigation";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import clsx from "clsx";
-import { useState } from "react";
+import { demos, type Item } from '../lib/demos';
+import { NextLogoDark } from '../components/next-logo';
+import Link from 'next/link';
+import { useSelectedLayoutSegment } from 'next/navigation';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import clsx from 'clsx';
+import { useState } from 'react';
 
 export function GlobalNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,8 +45,8 @@ export function GlobalNav() {
       </button>
 
       <div
-        className={clsx("overflow-y-auto lg:static lg:block", {
-          "fixed inset-x-0 bottom-0 top-14 mt-px bg-black": isOpen,
+        className={clsx('overflow-y-auto lg:static lg:block', {
+          'fixed inset-x-0 bottom-0 top-14 mt-px bg-black': isOpen,
           hidden: !isOpen,
         })}
       >
@@ -87,10 +87,10 @@ function GlobalNavItem({
       onClick={close}
       href={`/${item.slug}`}
       className={clsx(
-        "block rounded-md px-3 py-2 text-sm font-medium hover:text-gray-300",
+        'block rounded-md px-3 py-2 text-sm font-medium hover:text-gray-300',
         {
-          "text-gray-400 hover:bg-gray-800": !isActive,
-          "text-white": isActive,
+          'text-gray-400 hover:bg-gray-800': !isActive,
+          'text-white': isActive,
         },
       )}
     >

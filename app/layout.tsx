@@ -1,23 +1,23 @@
-import "@/styles/globals.css";
-import { AddressBar } from "@/components/addres-bar";
-import Byline from "@/components/byline";
-import { GlobalNav } from "@/ui/global-nav";
-import { Metadata } from "next";
+import '@/styles/globals.css';
+import { AddressBar } from '@/components/addres-bar';
+import Byline from '@/components/byline';
+import { GlobalNav } from '@/ui/global-nav';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    default: "Portfy",
-    template: "%s | Your Portfolio",
+    default: 'Portfy',
+    template: '%s | Your Portfolio',
   },
-  metadataBase: new URL("https://app-router.vercel.app"),
-  description: "Make your portfolio with Portfy, and organize your projects.",
+  metadataBase: new URL('https://app-router.vercel.app'),
+  description: 'Make your portfolio with Portfy, and organize your projects.',
   openGraph: {
-    title: "Portfy",
-    description: "Make your portfolio with Portfy, and organize your projects.",
+    title: 'Portfy',
+    description: 'Make your portfolio with Portfy, and organize your projects.',
     images: [`/api/og?title=Next.js App Router`],
   },
   twitter: {
-    card: "summary_large_image",
+    card: 'summary_large_image',
   },
 };
 
