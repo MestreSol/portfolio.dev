@@ -10,15 +10,7 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends(
-    "next",
-    "next/typescript",
-    "next/core-web-vitals",
-    "plugin:prettier/recommended",
-    "plugin:@next/next/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:eslint-plugin-react/recommended",
-  ),
+  ...compat.extends("next/core-web-vitals", "next/typescript"),
 ];
 
 export default eslintConfig;
