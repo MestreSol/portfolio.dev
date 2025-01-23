@@ -9,7 +9,6 @@ import React, {
 } from 'react';
 import classNames from 'classnames';
 
-
 import { DropdownWrapper } from '@/ui/components/DropdownWrapper';
 import { Flex } from '@/ui/components/Flex';
 import { Icon } from '@/ui/components/Icon';

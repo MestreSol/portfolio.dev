@@ -1,9 +1,10 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
-import styles from './HoloFx.module.scss';
+import React, { useEffect, useRef, CSSProperties } from 'react';
+
 import { Flex } from '@/ui/components/Flex';
-import { CSSProperties } from 'react';
+
+import styles from './component.module.scss';
 import classNames from 'classnames';
 
 interface MaskOptions {

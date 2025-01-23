@@ -1,7 +1,7 @@
 'use client';
 
 import React, { forwardRef, ReactNode } from 'react';
-import styles from './InlineCode.module.scss';
+import styles from './component.module.scss';
 import { Flex } from '@/ui/components/Flex';
 
 interface InlineCodeProps extends React.ComponentProps<typeof Flex> {

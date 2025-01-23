@@ -4,9 +4,9 @@ import React, { forwardRef, useState, useEffect } from 'react';
 import classNames from 'classnames';
 import { Grid } from '@/ui/components/Grid';
 import { Logo } from '@/ui/components/Logo';
-import styles from './LogoCloud.module.scss';
-import type { ComponentProps } from 'react';
 import { Flex } from '@/ui/components/Flex';
+import styles from './component.module.scss';
+import type { ComponentProps } from 'react';
 
 type LogoProps = ComponentProps<typeof Logo>;
 

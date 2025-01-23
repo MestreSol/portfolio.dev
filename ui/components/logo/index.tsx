@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react';
 import Link from 'next/link';
 import classNames from 'classnames';
-import styles from './Logo.module.scss';
+import styles from './component.module.scss';
 import { SpacingToken } from '@/ui/components/types';
 import { Flex } from '@/ui/components/Flex';
 

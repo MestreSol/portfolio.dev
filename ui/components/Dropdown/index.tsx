@@ -1,6 +1,7 @@
 'use client';
 
 import React, { ReactNode, forwardRef, SyntheticEvent } from 'react';
+
 import { Flex } from '@/ui/components/Flex';
 
 interface DropdownProps
@@ -12,10 +13,7 @@ interface DropdownProps
 }
 
 const Dropdown = forwardRef<HTMLDivElement, DropdownProps>(
-  (
-    { selectedOption, className, children, onEscape, onSelect, ...rest },
-    ref,
-  ) => {
+  ({ children, onSelect, ...rest }, ref) => {
     const handleSelect = (event: SyntheticEvent<HTMLDivElement>) => {
       const value = event.currentTarget.getAttribute('data-value');
       if (onSelect && value) {

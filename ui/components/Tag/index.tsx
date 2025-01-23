@@ -3,10 +3,9 @@
 import React, { forwardRef, ReactNode } from 'react';
 import classNames from 'classnames';
 
-
-import { Flex } from "@/ui/components/Flex";
-import { Text } from "@/ui/components/Text";
-import { Icon } from "@/ui/components/Icon";
+import { Flex } from '@/ui/components/Flex';
+import { Text } from '@/ui/components/Text';
+import { Icon } from '@/ui/components/Icon';
 import styles from './Tag.module.scss';
 
 interface TagProps extends React.ComponentProps<typeof Flex> {

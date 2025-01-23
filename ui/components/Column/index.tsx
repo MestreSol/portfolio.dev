@@ -1,6 +1,7 @@
 'use client';
 
-import { forwardRef } from 'react';
+import React, { forwardRef } from 'react';
+
 import { Flex } from '@/ui/components/Flex';
 
 interface ColumnProps extends React.ComponentProps<typeof Flex> {

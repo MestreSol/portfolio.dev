@@ -1,14 +1,17 @@
 'use client';
 
 import React, { forwardRef, useState, useEffect, ReactNode } from 'react';
-import classNames from 'classnames';
-import { IconType } from 'react-icons';
+
 import { iconLibrary } from '@/ui/components/icons';
 import { ColorScheme, ColorWeight } from '@/ui/components/types';
 import { Flex } from '@/ui/components/Flex';
 import { Tooltip } from '@/ui/components/Tooltip';
-import styles from './Icon.module.scss';
-import iconStyles from './IconButton.module.scss';
+
+import styles from './component.module.scss';
+import iconStyles from '@/ui/components/IconButton/component.module.scss';
+
+import { IconType } from 'react-icons';
+import classNames from 'classnames';
 
 interface IconProps extends React.ComponentProps<typeof Flex> {
   name: string;

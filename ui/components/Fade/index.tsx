@@ -4,7 +4,8 @@ import React, { forwardRef, ReactNode } from 'react';
 import styles from './Fade.module.scss';
 
 import { Flex } from '@/ui/components/Flex';
-import { ColorScheme, ColorWeight, SpacingToken } from '../types';
+
+import { ColorScheme, ColorWeight, SpacingToken } from '@/ui/components/types';
 
 type BaseColor =
   | `${ColorScheme}-${ColorWeight}`

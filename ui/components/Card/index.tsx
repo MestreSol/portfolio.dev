@@ -2,14 +2,14 @@
 
 import React, { forwardRef } from 'react';
 import { Flex } from '@/ui/components/Flex';
-import styles from './Card.module.scss';
+import styles from './component.module.scss';
 
 interface CardProps extends React.ComponentProps<typeof Flex> {
   children?: React.ReactNode;
 }
 
 const Card = forwardRef<HTMLDivElement, CardProps>(
-  ({ children, style, className, ...rest }, ref) => {
+  ({ children, ...rest }, ref) => {
     return (
       <Flex
         ref={ref}

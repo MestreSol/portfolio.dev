@@ -8,9 +8,9 @@ import { Spinner } from '@/ui/components/Spinner';
 import { Icon } from '@/ui/components/Icon';
 import { Arrow } from '@/ui/components/Arrow';
 import { Flex } from '@/ui/components/Flex';
+import { ElementType } from '@/ui/components/ElementType';
 
 import styles from './component.module.scss';
-import { ElementType } from '@/ui/components/ElementType';
 
 interface CommonProps {
   variant?: 'primary' | 'secondary' | 'tertiary' | 'danger';

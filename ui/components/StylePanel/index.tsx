@@ -1,12 +1,14 @@
 'use client';
 
+import React from 'react';
+
 import { forwardRef, useState, useEffect } from 'react';
-import { Flex } from "@/ui/components/Flex";
-import { Text } from "@/ui/components/Text";
-import { IconButton } from "@/ui/components/IconButton";
-import { Scroller } from "@/ui/components/Scroller";
-import { Column } from "@/ui/components/Column";
-import { SegmentedControl } from "@/ui/components/SegmentedControl";
+import { Flex } from '@/ui/components/Flex';
+import { Text } from '@/ui/components/Text';
+import { IconButton } from '@/ui/components/IconButton';
+import { Scroller } from '@/ui/components/Scroller';
+import { Column } from '@/ui/components/Column';
+import { SegmentedControl } from '@/ui/components/SegmentedControl';
 
 import styles from './StylePanel.module.scss';
 import classNames from 'classnames';
@@ -181,7 +183,7 @@ const StylePanel = forwardRef<HTMLDivElement, StylePanelProps>(
               Brand
             </Flex>
             <Scroller minWidth={0} fitWidth>
-              {colorOptions.brand.map((color, index) => (
+              {colorOptions.brand.map((color) => (
                 <Flex
                   marginRight="2"
                   key={color}
@@ -216,7 +218,7 @@ const StylePanel = forwardRef<HTMLDivElement, StylePanelProps>(
               Accent
             </Flex>
             <Scroller minWidth={0} fitWidth>
-              {colorOptions.accent.map((color, index) => (
+              {colorOptions.accent.map((color) => (
                 <Flex
                   marginRight="2"
                   key={color}
@@ -250,7 +252,7 @@ const StylePanel = forwardRef<HTMLDivElement, StylePanelProps>(
               Neutral
             </Flex>
             <Scroller minWidth={0} fitWidth>
-              {colorOptions.neutral.map((color, index) => (
+              {colorOptions.neutral.map((color) => (
                 <Flex
                   marginRight="2"
                   key={color}

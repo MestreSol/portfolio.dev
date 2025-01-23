@@ -1,5 +1,6 @@
-import Link from 'next/link';
 import React, { ReactNode, forwardRef } from 'react';
+
+import Link from 'next/link';
 
 interface ElementTypeProps {
   href?: string;

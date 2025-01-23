@@ -12,7 +12,7 @@ import classNames from 'classnames';
 import { Flex } from '@/ui/components/Flex';
 import { Text } from '@/ui/components/Text';
 import styles from './Input.module.scss';
-import useDebounce from '../hooks/useDebounce';
+import useDebounce from '@/ui/hooks/useDebounce';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   id: string;

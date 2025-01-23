@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, forwardRef, useEffect } from 'react';
-import classNames from 'classnames';
 
 import { Flex } from '@/ui/components/Flex';
 import { IconButton } from '@/ui/components/IconButton';
@@ -9,10 +8,11 @@ import { Button } from '@/ui/components/Button';
 import { Text } from '@/ui/components/Text';
 import { Grid } from '@/ui/components/Grid';
 import { SegmentedControl } from '@/ui/components/SegmentedControl';
-import { RevealFx } from '@/ui/components/RevealFx';
+import { RevealFx } from '@/ui/components/RevealFX';
 import { NumberInput } from '@/ui/components/NumberInput';
 
-import styles from './DatePicker.module.scss';
+import styles from './component.module.scss';
+import classNames from 'classnames';
 
 export interface DatePickerProps
   extends Omit<React.ComponentProps<typeof Flex>, 'onChange'> {

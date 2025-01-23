@@ -9,15 +9,16 @@ import React, {
   useState,
   useContext,
 } from 'react';
-import ReactDOM from 'react-dom';
-import classNames from 'classnames';
 
 import { Flex } from '@/ui/components/Flex';
 import { IconButton } from '@/ui/components/IconButton';
 import { Heading } from '@/ui/components/Heading';
 import { Text } from '@/ui/components/Text';
 
-import styles from './Dialog.module.scss';
+import styles from './component.module.scss';
+
+import ReactDOM from 'react-dom';
+import classNames from 'classnames';
 
 interface DialogProps extends Omit<React.ComponentProps<typeof Flex>, 'title'> {
   isOpen: boolean;

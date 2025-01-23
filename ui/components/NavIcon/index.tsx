@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import styles from './NavIcon.module.scss';
+import styles from './component.module.scss';
 import { Flex } from '@/ui/components/Flex';
 import classNames from 'classnames';
 

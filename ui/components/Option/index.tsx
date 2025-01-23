@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import { Flex } from '@/ui/components/Flex';
 import { Text } from '@/ui/components/Text';
 import styles from './Option.module.scss';
-import { ElementType } from './ElementType';
+import { ElementType } from '@/ui/components/ElementType';
 import React, { forwardRef } from 'react';
 
 export interface OptionProps {

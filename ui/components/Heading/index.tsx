@@ -1,10 +1,20 @@
 'use client';
 
 import React, { ElementType, ComponentPropsWithoutRef } from 'react';
-import classNames from 'classnames';
 
-import { TextProps, CommonProps, SpacingProps } from '@/ui/components/interfaces';
-import { ColorScheme, ColorWeight, TextVariant, SpacingToken } from '@/ui/components/types';
+import {
+  TextProps,
+  CommonProps,
+  SpacingProps,
+} from '@/ui/components/interfaces';
+import {
+  ColorScheme,
+  ColorWeight,
+  TextVariant,
+  SpacingToken,
+} from '@/ui/components/types';
+
+import classNames from 'classnames';
 
 type HeadingProps<T extends ElementType> = TextProps<T> &
   CommonProps &

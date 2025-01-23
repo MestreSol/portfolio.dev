@@ -3,7 +3,7 @@
 import React, { forwardRef } from 'react';
 import { Text } from '@/ui/components/Text';
 import { Flex } from '@/ui/components/Flex';
-import { IconButton, IconButtonProps} from '@/ui/components/IconButton';
+import { IconButton, IconButtonProps } from '@/ui/components/IconButton';
 
 interface InteractiveDetailsProps {
   label?: React.ReactNode;

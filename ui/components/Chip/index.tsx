@@ -8,7 +8,7 @@ import { Icon } from '@/ui/components/Icon';
 import { IconButton } from '@/ui/components/IconButton';
 import { IconButtonProps } from '@/ui/components/IconButton';
 
-import styles from './Chip.module.scss';
+import styles from './component.module.scss';
 
 interface ChipProps extends React.ComponentProps<typeof Flex> {
   label: string;

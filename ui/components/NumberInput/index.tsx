@@ -4,7 +4,7 @@ import React, { forwardRef, useState } from 'react';
 import { Input } from '@/ui/components/Input';
 import { Flex } from '@/ui/components/Flex';
 import { IconButton } from '@/ui/components/IconButton';
-import styles from './NumberInput.module.scss';
+import styles from './component.module.scss';
 import classNames from 'classnames';
 
 interface NumberInputProps

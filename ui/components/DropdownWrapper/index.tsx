@@ -8,6 +8,7 @@ import React, {
   forwardRef,
   useImperativeHandle,
 } from 'react';
+
 import {
   useFloating,
   shift,
@@ -19,7 +20,8 @@ import {
 } from '@floating-ui/react-dom';
 import { Flex } from '@/ui/components/Flex';
 import { Dropdown } from '@/ui/components/Dropdown';
-import styles from './DropdownWrapper.module.scss';
+
+import styles from './component.module.scss';
 
 export interface DropdownWrapperProps {
   fillWidth?: boolean;

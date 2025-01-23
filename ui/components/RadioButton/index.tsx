@@ -3,7 +3,9 @@
 import React, { useState, useEffect, forwardRef } from 'react';
 import classNames from 'classnames';
 import { Flex } from '@/ui/components/Flex';
-import { InteractiveDetails, InteractiveDetailsProps } from '.';
+import { InteractiveDetails } from '@/ui/components/InteractiveDetails';
+import { InteractiveDetailsProps } from '@/ui/components/InteractiveDetails';
+
 import styles from './SharedInteractiveStyles.module.scss';
 
 interface RadioButtonProps

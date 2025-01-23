@@ -4,7 +4,10 @@ import React, { forwardRef } from 'react';
 import classNames from 'classnames';
 
 import { Flex } from '@/ui/components/Flex';
-import { InteractiveDetails, InteractiveDetailsProps } from '@/ui/components/InteractiveDetails';
+import {
+  InteractiveDetails,
+  InteractiveDetailsProps,
+} from '@/ui/components/InteractiveDetails';
 
 import styles from './Switch.module.scss';
 import commonStyles from './SharedInteractiveStyles.module.scss';

@@ -4,8 +4,11 @@ import React, { useState, useEffect, forwardRef } from 'react';
 import classNames from 'classnames';
 import { Flex } from '@/ui/components/Flex';
 import { Icon } from '@/ui/components/Icon';
-import { InteractiveDetails, InteractiveDetailsProps } from '@/ui/components/InteractiveDetails';
-import styles from './SharedInteractiveStyles.module.scss';
+import {
+  InteractiveDetails,
+  InteractiveDetailsProps,
+} from '@/ui/components/InteractiveDetails';
+import styles from './component.module.scss';
 
 interface CheckboxProps
   extends Omit<InteractiveDetailsProps, 'onClick'>,

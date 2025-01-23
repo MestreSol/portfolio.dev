@@ -3,8 +3,8 @@
 import React, { forwardRef, ReactNode } from 'react';
 import classNames from 'classnames';
 import { ElementType } from '@/ui/components/ElementType';
-import { Flex } from "@/ui/components/Flex";
-import { Icon } from "@/iu/components/Icon";
+import { Flex } from '@/ui/components/Flex';
+import { Icon } from '@/ui/components/Icon';
 import styles from './ToggleButton.module.scss';
 
 interface CommonProps {
@@ -48,7 +48,6 @@ const ToggleButton = forwardRef<HTMLElement, ToggleButtonProps>(
       justifyContent = 'center',
       fillWidth = false,
       weight = 'default',
-      truncate = false,
       prefixIcon,
       suffixIcon,
       className,
