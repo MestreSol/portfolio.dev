@@ -1,9 +1,11 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
-import classNames from 'classnames';
-import styles from './component.module.scss';
+import React, { useEffect, useRef } from 'react';
+
 import { Flex } from '@/ui/components/Flex';
+
+import styles from './component.module.scss';
+import classNames from 'classnames';
 
 interface ArrowProps {
   trigger: string;

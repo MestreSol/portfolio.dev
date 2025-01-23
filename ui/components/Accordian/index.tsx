@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, forwardRef, useImperativeHandle } from 'react';
+import PropTypes from 'prop-types';
 
 import { Flex } from '@/ui/components/Flex';
 import { Column } from '@/ui/components/Column';
@@ -91,5 +92,12 @@ const Accordion: React.FC<AccordionProps> = forwardRef(
   },
 );
 
+Accordion.propTypes = {
+  title: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
+  open: PropTypes.bool,
+};
+
 Accordion.displayName = 'Accordion';
+
 export { Accordion };
