@@ -60,6 +60,8 @@ const effects = {
     display: false,
     color: 'neutral-alpha-weak',
     opacity: 100,
+    width: 1,
+    height: 1,
   },
 };
 
