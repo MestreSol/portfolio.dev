@@ -1,0 +1,93 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: rgba(13, 72, 60, 0.2); /* Cor esverdeada semitransparente */
+  backdrop-filter: blur(10px); /* Efeito de desfoque */
+  -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  transition: all 0.3s;
+}
+.brandArea {
+  display: flex;
+  align-items: center;
+}
+.brandImage {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.menuArea {
+  display: flex;
+  align-items: center;
+}
+.menuList {
+  display: flex;
+  gap: 20px;
+}
+.menuList li {
+  list-style: none;
+}
+.menuItem {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+  border-radius: 15px;
+  gap: 10px;
+}
+.menuItem:hover {
+  color: #f2f2f2;
+  transform: scale(1.1); /* Add hover animation */
+}
+.menuItem.active {
+  color: #f2f2f2;
+  background-color: rgba(13, 72, 60, 0.2); /* Cor esverdeada semitransparente */
+  backdrop-filter: blur(20px); /* Efeito de desfoque */
+  -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px); /* Increase blur for active state */
+  border: #f2f2f2 solid 1px;
+}
+
+.menuIcon {
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
+
+.menuText {
+  font-size: 16px;
+  margin-top: 5px; /* Add space between icon and text */
+}
+
+.userArea{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userArea{
+  color: #cccccc;
+}
