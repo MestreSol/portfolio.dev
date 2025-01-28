@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import styles from "./page.module.css";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
@@ -16,7 +17,7 @@ export default function Portifolio() {
       },
       {
         name: "linkedin",
-        url: "https://www.linkedin.com/in/joão-vitor-ferreira-8b1b1a1b3/"
+        url: "https://www.linkedin.com/in/jo%C3%A3o-vitor-ferreira1/"
       },
       {
         name: "twitter",
@@ -46,6 +47,50 @@ export default function Portifolio() {
     nodes: 1000,
     followers: 1000,
     projects: 2,
+    workExperience: [
+      {
+        id: 1,
+        company: "Company Name",
+        location: "Senior Design Engineer",
+        date: "2018 - 2021",
+        activities: [
+          "Desenvolvimento de software para sistemas embarcados",
+          "Desenvolvimento de software para sistemas embarcados",
+          "Desenvolvimento de software para sistemas embarcados",
+          "Desenvolvimento de software para sistemas embarcados"
+        ],
+        coWorkers: [
+          {
+            name: "Co-worker Name",
+            role: "Software Engineer",
+            avatar: "https://avatars.githubusercontent.com/u/71278929?v=4"
+          },
+          {
+            name: "Co-worker Name",
+            role: "Software Engineer",
+            avatar: "https://avatars.githubusercontent.com/u/71278929?v=4"
+          },
+          {
+            name: "Co-worker Name",
+            role: "Software Engineer",
+            avatar: "https://avatars.githubusercontent.com/u/71278929?v=4"
+          }
+        ]
+      },
+      {
+        id: 2,
+        company: "Company Name",
+        location: "Senior Design Engineer",
+        date: "2018 - 2021",
+        activities: [
+          "Desenvolvimento de software para sistemas embarcados",
+          "Desenvolvimento de software para sistemas embarcados",
+          "Desenvolvimento de software para sistemas embarcados",
+          "Desenvolvimento de software para sistemas embarcados"
+        ],
+        coWorkers: []
+      }
+      ]
   }
 
   const backgroundRef = useRef<HTMLDivElement>(null);
@@ -67,6 +112,27 @@ export default function Portifolio() {
     };
   }, []);
 
+  //Set active menu item
+  useEffect(() => {
+    const menuItems = document.querySelectorAll(`.${styles.menuItem}`);
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const sections = document.querySelectorAll("section");
+      sections.forEach((section, index) => {
+        if (scrollPosition >= section.offsetTop - 100) {
+          menuItems.forEach((item) => {
+            item.classList.remove(styles.active);
+          });
+          menuItems[index].classList.add(styles.active);
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className={styles.page}>
       <div ref={backgroundRef} className={styles.background}></div>
@@ -90,7 +156,7 @@ export default function Portifolio() {
                 height={200}
               />
               <Image
-                src="https://avatars.githubusercontent.com/u/71278929?v=4"
+                src={userMock.avatar}
                 alt="Avatar"
                 className={styles.userImage}
                 width={200}
@@ -121,14 +187,141 @@ export default function Portifolio() {
           </div>
         </div>
         <div className={styles.informationArea}>
-          <div className={styles.title}>About Me</div>
-          <div className={styles.content}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            lacinia, purus at ultricies ultricies, nunc nisi fermentum justo, eu
-            aliquet libero metus id ligula. Vestibulum ante ipsum primis in
+          <section className={styles.session} id={"about"}>
+          <div className={styles.sessionTitle}>About Me</div>
+          <div className={styles.sessionContent}>
+            <p className={styles.paragraph}>
+            Sou um desenvolvedor de software com experiência em várias linguagens de programação sempre buscando o aprimoramento nelas, sejam elas voltadas para analise, back-end, front-end, testes ou banco de dados pois acredito que cada projeto pede ferramentas diferentes para serem concluídos.
+            Aplico esses conhecimentos em uma serie de projetos pessoais e profissionais, alguns deles podem ser acessados atraves do meu portifolio do Github, Itch.io ou Portfy (plataforma que eu construí)
+            Estou buscando sempre o aperfeisuamento das minhas habilidades de programação e buscando aplica-las em diversos projetos, também estou exercitando minhas habilidades de gerenciamento de projetos atravez de equipes de desenvolvimento voluntario, geridas atravez das metodologias ageis mais utilizadas no mercado.
+            </p>
           </div>
+          </section>
+          <section className={styles.session} id={"workExp"}>
+            <div className={styles.sessionTitle}>Work Experience</div>
+            <div className={styles.sessionContent}>
+            <div className={styles.experience} onClick={() => console.log("click")}>
+              <div className={styles.experienceHeader}>
+              <div className={styles.company}>
+                <div className={styles.companyName}>Company Name</div>
+                <div className={styles.location}>Senior Design Engineer</div>
+              </div>
+              <div className={styles.date}>2018 - 2021</div>
+              </div>
+              <div className={styles.experienceContent}>
+                <ul className={styles.activetyList}>
+                <li className={styles.activety}>Desenvolvimento de software para sistemas embarcados</li>
+                <li className={styles.activety}>Desenvolvimento de software para sistemas embarcados</li>
+                <li className={styles.activety}>Desenvolvimento de software para sistemas embarcados</li>
+                <li className={styles.activety}>Desenvolvimento de software para sistemas embarcados</li>
+                </ul>
+                <div className={styles.co_workers}>
+                  <ul className={styles.co_workersList}>
+                    <li className={styles.co_worker}>
+                      <Image src={userMock.cover} alt={"co-worker"} width={32} height={32} className={styles.co_workerImage}/>
+                      <p className={styles.co_workerInfo}>
+                        <strong>Co-worker Name</strong>
+                        <br/>
+                        Software Engineer
+                      </p>
+                    </li>
+                    <li className={styles.co_worker}>
+                      <Image src={userMock.cover} alt={"co-worker"} width={32} height={32} className={styles.co_workerImage}/>
+                      <p className={styles.co_workerInfo}>
+                        <strong>Co-worker Name</strong>
+                        <br/>
+                        Software Engineer
+                      </p>
+                    </li>
+                    <li className={styles.co_worker}>
+                      <Image src={userMock.cover} alt={"co-worker"} width={32} height={32} className={styles.co_workerImage}/>
+                      <p className={styles.co_workerInfo}>
+                        <strong>Co-worker Name</strong>
+                        <br/>
+                        Software Engineer
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+              <div className={styles.experience}>
+                <div className={styles.experienceHeader}>
+                  <div className={styles.company}>
+                    <div className={styles.companyName}>Company Name</div>
+                    <div className={styles.location}>Senior Design Engineer</div>
+                  </div>
+                  <div className={styles.date}>2018 - 2021</div>
+                </div>
+                <div className={styles.experienceContent}>
+                  <ul className={styles.activetyList}>
+                    <li className={styles.activety}>Desenvolvimento de software para sistemas embarcados</li>
+                    <li className={styles.activety}>Desenvolvimento de software para sistemas embarcados</li>
+                    <li className={styles.activety}>Desenvolvimento de software para sistemas embarcados</li>
+                    <li className={styles.activety}>Desenvolvimento de software para sistemas embarcados</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className={styles.session} id={"academic"}>
+            <div className={styles.sessionTitle}>Academic</div>
+            <div className={styles.sessionContent}>
+              <div className={styles.academic}>
+                <div className={styles.academicHeader}>
+                  <div className={styles.institution}>
+                    <div className={styles.institutionName}>Institution Name</div>
+                    <div className={styles.course}>Course Name</div>
+                  </div>
+                  <div className={styles.date}>2018 - 2021</div>
+                </div>
+                <div className={styles.academicContent}>
+                  <div className={styles.note}>Note: 9.0</div>
+                  <ul className={styles.subjectsList}>
+                    <li className={styles.subject}>Subject Name</li>
+                    <li className={styles.subject}>Subject Name</li>
+                    <li className={styles.subject}>Subject Name</li>
+                    <li className={styles.subject}>Subject Name</li>
+                  </ul>
+                </div>
+              </div>
+              <div className={styles.academic}>
+                <div className={styles.academicHeader}>
+                  <div className={styles.institution}>
+                    <div className={styles.institutionName}>Institution Name</div>
+                    <div className={styles.course}>Course Name</div>
+                  </div>
+                  <div className={styles.date}>2018 - 2021</div>
+                </div>
+                <div className={styles.academicContent}>
+                  <ul className={styles.subjectsList}>
+                    <li className={styles.subject}>Subject Name</li>
+                    <li className={styles.subject}>Subject Name</li>
+                    <li className={styles.subject}>Subject Name</li>
+                    <li className={styles.subject}>Subject Name</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className={styles.licenses}>
+            <div className={styles.sessionTitle}>Licenses</div>
+            <div className={styles.sessionContent}>
+              <div className={styles.license}>
+                <div className={styles.licenseHeader}>
+                  <div className={styles.licenseInfo}>
+                    <div className={styles.licenseName}>License Name</div>
+                    <div className={styles.licensor}>GOOGLE</div>
+                  </div>
+                  <div className={styles.date}>2018 - 2021</div>
+                </div>
+                <div className={styles.licenseContent}>
+                  <p className={styles.licenseDescription}>License Description</p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-
       </div>
     </div>
   );

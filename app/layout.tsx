@@ -18,7 +18,7 @@ export async function generateMetadata() {
       siteName: `${person.firstName}'s Portfolio`,
       locale: "en_US",
       type: "website",
-      image: ["/api/og?title=portfy"],
+      //image: ["/api/og?title=portfy"],
     },
     robots: {
       index: true,
