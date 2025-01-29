@@ -10,130 +10,112 @@ import InformationArea from "@/components/area/informationArea";
 
 export default function Portifolio() {
   const [isExpModal, setIsModalOpen] = useState(false);
-  const [isRecModal, setIsRecModal] = useState(false);
-  const userMock = {
-    name: "João Vitor Ferreira",
-    description: "Software Engineer",
-    cover: "https://avatars.githubusercontent.com/u/71278929?v=4",
-    avatar: "https://avatars.githubusercontent.com/u/42494721?v=4",
+  //const [isRecModal, setIsRecModal] = useState(false);
+  const userMock: Profile = {
+    id: 1,
+    user: {
+      id: 1,
+      name: "John Doe",
+      email: "johndoe@example.com",
+      password: "hashedpassword123",
+    },
+    avatar: "https://example.com/avatar.jpg",
+    cover: "https://example.com/cover.jpg",
+    description: "Full Stack Developer with experience in web and mobile applications.",
     socials: [
       {
         id: 1,
-        name: "github",
-        url: "https://github.com/MestreSol",
-      },
-      {
-        id: 2,
-        name: "linkedin",
-        url: "https://www.linkedin.com/in/jo%C3%A3o-vitor-ferreira1/",
-      },
-      {
-        id: 3,
-        name: "twitter",
-        url: "https://twitter.com/JoaoVitorFerre8",
-      },
-      {
-        id: 4,
-        name: "instagram",
-        url: "https://www.instagram.com/joao.vitor.ferreira/",
-      },
-      {
-        id: 5,
-        name: "facebook",
-        url: "https://www.facebook.com/joao.vitor.ferreira.568294",
-      },
-      {
-        id: 6,
-        name: "youtube",
-        url: "https://www.youtube.com/channel/UC9J4c5bq2vNcH9Xa7gU3d3g",
+        user: { id: 1, name: "John Doe", email: "johndoe@example.com", password: "hashedpassword123" },
+        name: "GitHub",
+        link: "https://github.com/johndoe",
       },
     ],
-    location: {
-      city: "São Paulo",
-      country: "Brazil",
-      timezone: "GMT-3",
-    },
-    contact: {
-      email: "gmail@gmail.com",
-    },
-    nodes: 1000,
-    followers: 1000,
-    projects: 2,
+    location: "San Francisco, CA",
+    contacts: ["+1 123 456 7890", "johndoe@workmail.com"],
+    nodes: 5,
     workExperience: [
       {
         id: 1,
-        company: "Company Name",
-        location: "Senior Design Engineer",
-        initialDate: "2018",
-        finalDate: "2021",
+        user: { id: 1, name: "John Doe", email: "johndoe@example.com", password: "hashedpassword123" },
+        company: {
+          id: 1,
+          name: "TechCorp",
+          location: "New York, NY",
+          description: "A leading tech company specializing in AI and cloud solutions.",
+          CNPJ: "12345678900001",
+          contacts: ["hr@techcorp.com"],
+          image: "https://example.com/company.jpg",
+        },
+        location: "Remote",
+        startDate: "2020-01-01",
+        endDate: "2023-12-31",
         activities: [
-          {
-            id: 1,
-            description: "Desenvolvimento de software para sistemas embarcados",
-          },
-          {
-            id: 2,
-            description: "Desenvolvimento de software para sistemas embarcados",
-          },
-          {
-            id: 3,
-            description: "Desenvolvimento de software para sistemas embarcados",
-          },
-          {
-            id: 4,
-            description: "Desenvolvimento de software para sistemas embarcados",
-          },
+          { id: 1, description: "Developed scalable web applications." },
+          { id: 2, description: "Led a team of junior developers." },
         ],
         coWorkers: [
-          {
-            id: 1,
-            name: "Co-worker Name",
-            role: "Software Engineer",
-            avatar: "https://avatars.githubusercontent.com/u/71278929?v=4",
-          },
-          {
-            id: 2,
-            name: "Co-worker Name",
-            role: "Software Engineer",
-            avatar: "https://avatars.githubusercontent.com/u/71278929?v=4",
-          },
-          {
-            id: 3,
-            name: "Co-worker Name",
-            role: "Software Engineer",
-            avatar: "https://avatars.githubusercontent.com/u/71278929?v=4",
-          },
+          { id: 1, name: "Alice Smith", role: "Software Engineer", avatar: "https://example.com/alice.jpg" },
         ],
-      },
-      {
-        id: 2,
-        company: "Company Name",
-        location: "Senior Design Engineer",
-        initialDate: "2018",
-        finalDate: "2021",
-        activities: [
-          {
-            id: 1,
-            description: "Desenvolvimento de software para sistemas embarcados",
-          },
-          {
-            id: 2,
-            description: "Desenvolvimento de software para sistemas embarcados",
-          },
-          {
-            id: 3,
-            description: "Desenvolvimento de software para sistemas embarcados",
-          },
-          {
-            id: 4,
-            description: "Desenvolvimento de software para sistemas embarcados",
-          },
-        ],
-        coWorkers: [],
       },
     ],
+    academicExperience: [
+      {
+        id: 1,
+        course: "Computer Science",
+        user: { id: 1, name: "John Doe", email: "johndoe@example.com", password: "hashedpassword123" },
+        level: "Bachelor's Degree",
+        degree: "BSc in Computer Science",
+        institution: "MIT",
+        location: "Cambridge, MA",
+        startDate: "2015-09-01",
+        endDate: "2019-06-30",
+        activities: [
+          { id: 1, description: "Research in Artificial Intelligence." },
+        ],
+        coWorkers: [
+          { id: 1, name: "Bob Johnson", role: "Research Assistant", avatar: "https://example.com/bob.jpg" },
+        ],
+      },
+    ],
+    followers: [
+      { id: 2, name: "Jane Doe", email: "janedoe@example.com", password: "securepass456" },
+    ],
+    projects: [
+      {
+        id: 1,
+        about: "A web-based project management tool.",
+        Team: {
+          id: 1,
+          name: "Agile Devs",
+          description: "A team of developers building innovative solutions.",
+          image: "https://example.com/team.jpg",
+          members: [
+            { id: 1, user: { id: 1, name: "John Doe", email: "johndoe@example.com", password: "hashedpassword123" }, role: "Lead Developer" },
+          ],
+        },
+        user: { id: 1, name: "John Doe", email: "johndoe@example.com", password: "hashedpassword123" },
+        name: "TaskFlow",
+        description: "A platform for managing tasks and team workflows.",
+        startDate: "2022-05-01",
+        endDate: "2023-10-31",
+        activities: [
+          { id: 1, description: "Developed the back-end API." },
+          { id: 2, description: "Designed the UI/UX." },
+        ],
+        coWorkers: [
+          { id: 1, name: "Eve Martinez", role: "UI/UX Designer", avatar: "https://example.com/eve.jpg" },
+        ],
+      },
+    ],
+    languages: [
+      { id: 1, name: "English", description: "Native speaker.", proficiency: "NATIVE" },
+      { id: 2, name: "Spanish", description: "Fluent in written and spoken Spanish.", proficiency: "FLUENT" },
+    ],
+    skills: [
+      { id: 1, name: "JavaScript", description: "Experienced in full-stack JavaScript development.", proficiency: "EXPERT" },
+      { id: 2, name: "Python", description: "Proficient in writing scalable back-end services.", proficiency: "ADVANCED" },
+    ],
   };
-
   const backgroundRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -174,18 +156,18 @@ export default function Portifolio() {
     };
   }, []);
 
-  const openModal = (type: string, id: number) => {
-    if (type === "workExp") {
-      const experience = userMock.workExperience.find(
-        (experience) => experience.id === id,
-      );
-      console.log(experience);
-    } else if (type === "recomendation") {
-      console.log("Recomendation");
-    }
+  // const openModal = (type: string, id: number) => {
+  //   if (type === "workExp") {
+  //     const experience = userMock.workExperience.find(
+  //       (experience) => experience.id === id,
+  //     );
+  //     console.log(experience);
+  //   } else if (type === "recomendation") {
+  //     console.log("Recomendation");
+  //   }
 
-    setIsModalOpen(true);
-  };
+  //   setIsModalOpen(true);
+  // };
 
   const closeModal = () => {
     setIsModalOpen(false);
@@ -194,27 +176,21 @@ export default function Portifolio() {
   return (
     <div>
       <div
-        className={
-          isExpModal || isRecModal
-            ? `${styles.page} ${styles.blur}`
-            : styles.page
-        }
+        className={isExpModal ? `${styles.page} ${styles.blur}` : styles.page}
       >
         <div ref={backgroundRef} className={styles.background}></div>
         <div className={styles.container}>
           <PortifolioIndice sections={["home", "aa"]} />
           <UserCard
-            name={userMock.name}
+            name={userMock.user.name}
             description={userMock.description}
             cover={userMock.cover}
             avatar={userMock.avatar}
             nodes={userMock.nodes}
-            followers={userMock.followers}
-            projects={userMock.projects}
+            followers={userMock.followers.length}
+            projects={userMock.projects.length}
           />
-          <InformationArea
-
-          />
+          <InformationArea profile={userMock} />
         </div>
         {isExpModal && (
           <div className={styles.modalBackground} onClick={closeModal}>
@@ -253,7 +229,7 @@ export default function Portifolio() {
                   </div>
                   <div
                     className={styles.coWorker}
-                    onClick={openModal("recomendation", 1)}
+                    //onClick={openModal("recomendation", 1)}
                   >
                     <span className={styles.recomendation}></span>
                     <Image

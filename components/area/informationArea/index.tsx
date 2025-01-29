@@ -2,27 +2,32 @@ import styles from "@/app/portifolio/page.module.css";
 import Image from "next/image";
 import React from "react";
 import AboutMe from "@/components/atons/AboutMe";
+type Props = {
+  profile: Profile;
+};
 
-export default function InformationArea(props: Profile) {
+export default function InformationArea({ profile }: Props) {
   return (
     <div className={styles.informationArea}>
-      <AboutMe about={props.about} />
+      <AboutMe about={profile.description} />
       <section className={styles.session} id={"workExp"}>
         <div className={styles.sessionTitle}>Work Experience</div>
         <div className={styles.sessionContent}>
-          {props.workExperience.map((experience) => (
+          {profile.workExperience.map((experience) => (
             <div
               className={styles.experience}
-              onClick={() => openModal("workExp", 1)}
+              //onClick={() => openModal("workExp", 1)}
               key={experience.id}
             >
               <div className={styles.experienceHeader}>
                 <div className={styles.company}>
-                  <div className={styles.companyName}>{experience.company}</div>
+                  <div className={styles.companyName}>
+                    {experience.company.name}
+                  </div>
                   <div className={styles.location}>{experience.location}</div>
                 </div>
                 <div className={styles.date}>
-                  {experience.initialDate} - {experience.finalDate}
+                  {experience.startDate} - {experience.endDate}
                 </div>
               </div>
               <div className={styles.experienceContent}>
@@ -61,7 +66,7 @@ export default function InformationArea(props: Profile) {
       <section className={styles.session} id={"academic"}>
         <div className={styles.sessionTitle}>Academic</div>
         <div className={styles.sessionContent}>
-          {props.academic.map((academic) => (
+          {profile.academicExperience.map((academic) => (
             <div className={styles.academic} key={academic.institution}>
               <div className={styles.academicHeader}>
                 <div className={styles.institution}>
@@ -71,17 +76,17 @@ export default function InformationArea(props: Profile) {
                   <div className={styles.course}>{academic.course}</div>
                 </div>
                 <div className={styles.date}>
-                  {academic.initialDate} - {academic.finalDate}
+                  {academic.startDate} - {academic.endDate}
                 </div>
               </div>
               <div className={styles.academicContent}>
-                {academic.note && (
-                  <div className={styles.note}>Note: {academic.note}</div>
+                {academic.degree && (
+                  <div className={styles.note}>Note: {academic.degree}</div>
                 )}
                 <ul className={styles.subjectsList}>
-                  {academic.subjects.map((subject) => (
-                    <li className={styles.subject} key={subject}>
-                      {subject}
+                  {academic.activities.map((subject) => (
+                    <li className={styles.subject} key={subject.id}>
+                      {subject.description}
                     </li>
                   ))}
                 </ul>

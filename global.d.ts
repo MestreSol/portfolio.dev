@@ -58,6 +58,7 @@ declare global{
   }
   type AcademicExperience = {
     id: number;
+    course: string;
     user: User;
     level: string;
     degree: string;
@@ -113,14 +114,14 @@ declare global{
     id: number;
     name: string;
     description: string;
-    proficiency: ProficiencyLevel_Language;
+    proficiency: string;
   }
 
   type Skill = {
     id: number;
     name: string;
     description: string;
-    proficiency: ProficiencyLevel_Skill;
+    proficiency: string;
   }
   type Profile = {
     id: number;
