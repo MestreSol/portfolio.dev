@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { useState } from "react";
 import styles from "./page.module.css";
 import { useEffect, useRef } from "react";
 import PortifolioIndice from "@/components/atons/portifolioIndice";
@@ -9,7 +8,6 @@ import InformationArea from "@/components/area/informationArea";
 import { ModalProvider } from "@/context/ModalContext";
 
 export default function Portifolio() {
-  const [isExpModal, setIsModalOpen] = useState(false);
   //const [isRecModal, setIsRecModal] = useState(false);
   const userMock: Profile = {
     id: 1,
@@ -73,6 +71,18 @@ export default function Portifolio() {
             name: "Alice Smith",
             role: "Software Engineer",
             avatar: "https://picsum.photos/400",
+          },
+        ],
+        usedSkills: [
+          {
+            id: 1,
+            name: "JavaScript",
+            proficiency: "EXPERT",
+          },
+          {
+            id: 2,
+            name: "Python",
+            proficiency: "ADVANCED",
           },
         ],
       },
@@ -229,15 +239,12 @@ export default function Portifolio() {
     };
   }, []);
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
   //Open Modal to Work Experience
   return (
     <ModalProvider>
       <div>
         <div
-          className={isExpModal ? `${styles.page} ${styles.blur}` : styles.page}
+          className={styles.page}
         >
           <div ref={backgroundRef} className={styles.background}></div>
           <div className={styles.container}>

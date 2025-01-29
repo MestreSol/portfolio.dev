@@ -129,8 +129,7 @@ export default function InformationArea({ profile }: Props) {
           </div>
         </div>
       </section>
-      <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <p>Modal Content</p>
+      <Modal isOpen={isModalOpen} onClose={closeModal} experience={profile.workExperience[0]}>
       </Modal>
     </div>
   );

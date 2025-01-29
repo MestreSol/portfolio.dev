@@ -55,6 +55,11 @@ declare global {
       role: string;
       avatar: string;
     }[];
+    usedSkills: {
+      id: number;
+      name: string;
+      proficiency: string;
+    }[];
   };
   type AcademicExperience = {
     id: number;
