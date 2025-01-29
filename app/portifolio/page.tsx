@@ -176,6 +176,7 @@ export default function Portifolio() {
         name: "English",
         description: "Native speaker.",
         proficiency: "NATIVE",
+
       },
       {
         id: 2,
@@ -189,13 +190,20 @@ export default function Portifolio() {
         id: 1,
         name: "JavaScript",
         description: "Experienced in full-stack JavaScript development.",
-        proficiency: "EXPERT",
+        proficiency: 100,
+        verified: true,
+        projects: 10,
+        works: 5,
       },
       {
         id: 2,
         name: "Python",
         description: "Proficient in writing scalable back-end services.",
-        proficiency: "ADVANCED",
+        proficiency: 40,
+        verified: false,
+        projects: 10,
+        works: 5,
+
       },
     ],
   };

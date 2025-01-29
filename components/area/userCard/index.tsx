@@ -81,6 +81,10 @@ export default function UserCard(props: User) {
           />
         </a>
       </div>
+      <div>
+        <button className={styles.followButton}>Follow</button>
+      </div>
+
     </div>
   );
 }
