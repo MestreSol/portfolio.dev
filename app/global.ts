@@ -1,3 +1,6 @@
+import { createGlobalStyle } from 'styled-components';
+
+export const GlobalStyles = createGlobalStyle`
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -43,3 +46,6 @@ a {
     color-scheme: dark;
   }
 }
+
+`;
+

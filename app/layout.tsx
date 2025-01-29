@@ -1,5 +1,5 @@
 import React from "react";
-import "./globals.css";
+import { GlobalStyles } from "@/app/global";
 import { baseURL, home, person } from "@/app/resources";
 import GlobalMenu from "@/components/area/globalMenu";
 
@@ -40,6 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GlobalStyles />
       <body>
         <GlobalMenu></GlobalMenu>
         {children}
