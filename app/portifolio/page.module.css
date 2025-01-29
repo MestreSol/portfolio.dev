@@ -1,5 +1,3 @@
-
-
 .page {
   display: flex;
   justify-content: center;
@@ -24,7 +22,7 @@
   width: 100%;
   padding: 20px;
 }
-.line{
+.line {
   width: 60%;
   height: 1px;
   padding-left: 10px;
@@ -109,7 +107,7 @@
   font-size: 24px;
 }
 
-.informationArea{
+.informationArea {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -139,30 +137,30 @@
   font-weight: 400;
   text-align: center;
 }
-.session{
+.session {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-top: 20px;
 }
-.sessionTitle{
+.sessionTitle {
   font-size: 2.5rem;
   font-weight: 600;
   margin-top: 20px;
 }
 
-.sessionContent{
+.sessionContent {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-top: 20px;
 }
 
-.paragraph{
+.paragraph {
   font-size: 1.125rem;
 }
 
-.experience{
+.experience {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -171,22 +169,22 @@
   cursor: pointer;
 }
 
-.experienceHeader{
+.experienceHeader {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
-.company{
+.company {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.companyName{
+.companyName {
   font-size: 1.5rem;
   font-weight: 600;
   font-style: italic;
 }
-.location{
+.location {
   font-size: 1.125rem;
   font-weight: 400;
   color: #1bd800;
@@ -198,25 +196,25 @@
   color: #1bd800;
 }
 
-.experienceContent{
+.experienceContent {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-top: 20px;
 }
 
-.activetyList{
+.activetyList {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.activety{
+.activety {
   display: flex;
   gap: 10px;
   font-size: 1.125rem;
 }
 
-.co_workers{
+.co_workers {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
@@ -233,98 +231,191 @@
   gap: 10px;
   justify-content: space-between;
 }
-.co_worker{
+.co_worker {
   display: flex;
   gap: 10px;
   font-size: 1.125rem;
 }
-.co_workerImage{
+.co_workerImage {
   border-radius: 50%;
 }
 .co_workerInfo {
   font-size: 1rem;
 }
 
-.sessionContent{
+.sessionContent {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-top: 20px;
 }
-.academic{
+.academic {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 100%;
   margin-bottom: 15px;
 }
-.academicHeader{
+.academicHeader {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
-.institution{
+.institution {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.institutionName{
+.institutionName {
   font-size: 1.5rem;
   font-weight: 600;
   font-style: italic;
 }
-.course{
+.course {
   font-size: 1.125rem;
   font-weight: 400;
   color: #1bd800;
 }
 
-.note{
+.note {
   margin-bottom: 10px;
 }
-.subjectsList{
+.subjectsList {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.subject{
+.subject {
   display: flex;
   gap: 10px;
   font-size: 1.125rem;
 }
 
-.license{
+.license {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 100%;
   margin-bottom: 15px;
 }
-.licenseHeader{
+.licenseHeader {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
 
-.licenseName{
+.licenseName {
   font-size: 1.5rem;
   font-weight: 600;
   font-style: italic;
 }
-.licensor{
+.licensor {
   font-size: 1.125rem;
   font-weight: 400;
   color: #1bd800;
 }
 
-.licenseContent{
+.licenseContent {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.licenseDescription{
+.licenseDescription {
   display: flex;
   gap: 10px;
   font-size: 1.125rem;
+}
+
+.blur {
+  filter: blur(5px);
+}
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modalContent {
+  background: rgba(27, 216, 0, 0.21);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 45vw;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modalBody .coWorkers {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.modalBody .coWorkers .coWorker {
+  display: flex;
+  gap: 10px;
+  font-size: 1.125rem;
+}
+
+.modalBody .coWorkers .coWorkerImage {
+  border-radius: 50%;
+}
+
+.modalBody .coWorkers .coWorkerInfo {
+  font-size: 1rem;
+}
+
+.modalBody .recomendation {
+  width: 10px;
+  height: 10px;
+  background-color: #1bd800;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+}
+
+.modalBody .coWorker {
+  position: relative;
+}
+
+.modalDescription {
+  display: flex;
+  gap: 10px;
+  font-size: 1.125rem;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  margin-top: 10px;
+  border-top: #cccccc 1px solid;
+}
+
+.modalFooter button {
+  padding: 10px;
+  border: none;
+  background: #1bd800;
+  color: white;
+  font-size: 1.125rem;
+  cursor: pointer;
 }
