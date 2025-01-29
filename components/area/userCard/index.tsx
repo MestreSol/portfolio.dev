@@ -84,7 +84,6 @@ export default function UserCard(props: User) {
       <div>
         <button className={styles.followButton}>Follow</button>
       </div>
-
     </div>
   );
 }

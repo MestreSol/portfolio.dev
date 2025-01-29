@@ -28,7 +28,6 @@ declare global {
     user: User;
     name: string;
     link: string;
-
   };
   type Company = {
     id: number;
@@ -120,8 +119,7 @@ declare global {
     id: number;
     name: string;
     description: string;
-    proficiency: string;
-
+    proficiency: number;
   };
 
   type Skill = {
@@ -129,7 +127,7 @@ declare global {
     name: string;
     description: string;
     proficiency: number;
-    verified: boolean;
+    verified: string;
     projects: number;
     works: number;
   };

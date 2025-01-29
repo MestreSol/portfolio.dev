@@ -175,14 +175,13 @@ export default function Portifolio() {
         id: 1,
         name: "English",
         description: "Native speaker.",
-        proficiency: "NATIVE",
-
+        proficiency: 100,
       },
       {
         id: 2,
         name: "Spanish",
         description: "Fluent in written and spoken Spanish.",
-        proficiency: "FLUENT",
+        proficiency: 100,
       },
     ],
     skills: [
@@ -191,7 +190,7 @@ export default function Portifolio() {
         name: "JavaScript",
         description: "Experienced in full-stack JavaScript development.",
         proficiency: 100,
-        verified: true,
+        verified: "LinkedIn",
         projects: 10,
         works: 5,
       },
@@ -200,13 +199,12 @@ export default function Portifolio() {
         name: "Python",
         description: "Proficient in writing scalable back-end services.",
         proficiency: 40,
-        verified: false,
+        verified: "",
         projects: 10,
         works: 5,
-
       },
     ],
-     courses: [
+    courses: [
       {
         id: 1,
         name: "Full-Stack Web Development",
@@ -228,7 +226,7 @@ export default function Portifolio() {
         ],
         certify: "https://udemy.com/certificate",
       },
-    ]
+    ],
   };
   const backgroundRef = useRef<HTMLDivElement>(null);
 
@@ -274,9 +272,7 @@ export default function Portifolio() {
   return (
     <ModalProvider>
       <div>
-        <div
-          className={styles.page}
-        >
+        <div className={styles.page}>
           <div ref={backgroundRef} className={styles.background}></div>
           <div className={styles.container}>
             <PortifolioIndice sections={["home", "aa"]} />
