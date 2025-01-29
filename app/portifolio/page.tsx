@@ -3,10 +3,10 @@ import React from "react";
 import { useState } from "react";
 import styles from "./page.module.css";
 import { useEffect, useRef } from "react";
-import Image from "next/image";
 import PortifolioIndice from "@/components/atons/portifolioIndice";
 import UserCard from "@/components/area/userCard";
 import InformationArea from "@/components/area/informationArea";
+import { ModalProvider } from "@/context/ModalContext";
 
 export default function Portifolio() {
   const [isExpModal, setIsModalOpen] = useState(false);
@@ -15,17 +15,25 @@ export default function Portifolio() {
     id: 1,
     user: {
       id: 1,
-      name: "John Doe",
+      name: "Charlie Brown Jr.",
       email: "johndoe@example.com",
       password: "hashedpassword123",
     },
-    avatar: "https://example.com/avatar.jpg",
-    cover: "https://example.com/cover.jpg",
-    description: "Full Stack Developer with experience in web and mobile applications.",
+    avatar:
+      "https://i.pinimg.com/736x/1f/49/ce/1f49ce59408c40c6ea38f5bfbb704362.jpg",
+    cover: "https://picsum.photos/400",
+    description: "Musician, Composer, and Producer",
+    about:
+      "I'm a musician, composer, and producer with over 10 years of experience in the music industry. I specialize in rock, pop, and electronic music, and I'm passionate about creating innovative and engaging music that resonates with audiences.",
     socials: [
       {
         id: 1,
-        user: { id: 1, name: "John Doe", email: "johndoe@example.com", password: "hashedpassword123" },
+        user: {
+          id: 1,
+          name: "John Doe",
+          email: "johndoe@example.com",
+          password: "hashedpassword123",
+        },
         name: "GitHub",
         link: "https://github.com/johndoe",
       },
@@ -36,15 +44,21 @@ export default function Portifolio() {
     workExperience: [
       {
         id: 1,
-        user: { id: 1, name: "John Doe", email: "johndoe@example.com", password: "hashedpassword123" },
+        user: {
+          id: 1,
+          name: "John Doe",
+          email: "johndoe@example.com",
+          password: "hashedpassword123",
+        },
         company: {
           id: 1,
           name: "TechCorp",
           location: "New York, NY",
-          description: "A leading tech company specializing in AI and cloud solutions.",
+          description:
+            "A leading tech company specializing in AI and cloud solutions.",
           CNPJ: "12345678900001",
           contacts: ["hr@techcorp.com"],
-          image: "https://example.com/company.jpg",
+          image: "https://picsum.photos/400",
         },
         location: "Remote",
         startDate: "2020-01-01",
@@ -54,7 +68,12 @@ export default function Portifolio() {
           { id: 2, description: "Led a team of junior developers." },
         ],
         coWorkers: [
-          { id: 1, name: "Alice Smith", role: "Software Engineer", avatar: "https://example.com/alice.jpg" },
+          {
+            id: 1,
+            name: "Alice Smith",
+            role: "Software Engineer",
+            avatar: "https://picsum.photos/400",
+          },
         ],
       },
     ],
@@ -62,7 +81,12 @@ export default function Portifolio() {
       {
         id: 1,
         course: "Computer Science",
-        user: { id: 1, name: "John Doe", email: "johndoe@example.com", password: "hashedpassword123" },
+        user: {
+          id: 1,
+          name: "John Doe",
+          email: "johndoe@example.com",
+          password: "hashedpassword123",
+        },
         level: "Bachelor's Degree",
         degree: "BSc in Computer Science",
         institution: "MIT",
@@ -73,12 +97,22 @@ export default function Portifolio() {
           { id: 1, description: "Research in Artificial Intelligence." },
         ],
         coWorkers: [
-          { id: 1, name: "Bob Johnson", role: "Research Assistant", avatar: "https://example.com/bob.jpg" },
+          {
+            id: 1,
+            name: "Bob Johnson",
+            role: "Research Assistant",
+            avatar: "https://picsum.photos/400",
+          },
         ],
       },
     ],
     followers: [
-      { id: 2, name: "Jane Doe", email: "janedoe@example.com", password: "securepass456" },
+      {
+        id: 2,
+        name: "Jane Doe",
+        email: "janedoe@example.com",
+        password: "securepass456",
+      },
     ],
     projects: [
       {
@@ -88,12 +122,26 @@ export default function Portifolio() {
           id: 1,
           name: "Agile Devs",
           description: "A team of developers building innovative solutions.",
-          image: "https://example.com/team.jpg",
+          image: "https://picsum.photos/400",
           members: [
-            { id: 1, user: { id: 1, name: "John Doe", email: "johndoe@example.com", password: "hashedpassword123" }, role: "Lead Developer" },
+            {
+              id: 1,
+              user: {
+                id: 1,
+                name: "John Doe",
+                email: "johndoe@example.com",
+                password: "hashedpassword123",
+              },
+              role: "Lead Developer",
+            },
           ],
         },
-        user: { id: 1, name: "John Doe", email: "johndoe@example.com", password: "hashedpassword123" },
+        user: {
+          id: 1,
+          name: "John Doe",
+          email: "johndoe@example.com",
+          password: "hashedpassword123",
+        },
         name: "TaskFlow",
         description: "A platform for managing tasks and team workflows.",
         startDate: "2022-05-01",
@@ -103,17 +151,42 @@ export default function Portifolio() {
           { id: 2, description: "Designed the UI/UX." },
         ],
         coWorkers: [
-          { id: 1, name: "Eve Martinez", role: "UI/UX Designer", avatar: "https://example.com/eve.jpg" },
+          {
+            id: 1,
+            name: "Eve Martinez",
+            role: "UI/UX Designer",
+            avatar: "https://picsum.photos/400",
+          },
         ],
       },
     ],
     languages: [
-      { id: 1, name: "English", description: "Native speaker.", proficiency: "NATIVE" },
-      { id: 2, name: "Spanish", description: "Fluent in written and spoken Spanish.", proficiency: "FLUENT" },
+      {
+        id: 1,
+        name: "English",
+        description: "Native speaker.",
+        proficiency: "NATIVE",
+      },
+      {
+        id: 2,
+        name: "Spanish",
+        description: "Fluent in written and spoken Spanish.",
+        proficiency: "FLUENT",
+      },
     ],
     skills: [
-      { id: 1, name: "JavaScript", description: "Experienced in full-stack JavaScript development.", proficiency: "EXPERT" },
-      { id: 2, name: "Python", description: "Proficient in writing scalable back-end services.", proficiency: "ADVANCED" },
+      {
+        id: 1,
+        name: "JavaScript",
+        description: "Experienced in full-stack JavaScript development.",
+        proficiency: "EXPERT",
+      },
+      {
+        id: 2,
+        name: "Python",
+        description: "Proficient in writing scalable back-end services.",
+        proficiency: "ADVANCED",
+      },
     ],
   };
   const backgroundRef = useRef<HTMLDivElement>(null);
@@ -156,119 +229,32 @@ export default function Portifolio() {
     };
   }, []);
 
-  // const openModal = (type: string, id: number) => {
-  //   if (type === "workExp") {
-  //     const experience = userMock.workExperience.find(
-  //       (experience) => experience.id === id,
-  //     );
-  //     console.log(experience);
-  //   } else if (type === "recomendation") {
-  //     console.log("Recomendation");
-  //   }
-
-  //   setIsModalOpen(true);
-  // };
-
   const closeModal = () => {
     setIsModalOpen(false);
   };
   //Open Modal to Work Experience
   return (
-    <div>
-      <div
-        className={isExpModal ? `${styles.page} ${styles.blur}` : styles.page}
-      >
-        <div ref={backgroundRef} className={styles.background}></div>
-        <div className={styles.container}>
-          <PortifolioIndice sections={["home", "aa"]} />
-          <UserCard
-            name={userMock.user.name}
-            description={userMock.description}
-            cover={userMock.cover}
-            avatar={userMock.avatar}
-            nodes={userMock.nodes}
-            followers={userMock.followers.length}
-            projects={userMock.projects.length}
-          />
-          <InformationArea profile={userMock} />
-        </div>
-        {isExpModal && (
-          <div className={styles.modalBackground} onClick={closeModal}>
-            <div
-              className={styles.modalContent}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <div className={styles.modalHeader}>
-                <div>
-                  <h2 className={styles.modalTitle}>Work Experience</h2>
-                  <p className={styles.modalSubTitle}>Software Engineer</p>
-                </div>
-                <div>
-                  <p className={styles.modalInfo}>Company Name</p>
-                  <p className={styles.modalDate}>2018 - 2021</p>
-                </div>
-              </div>
-              <div className={styles.modalBody}>
-                <p className={styles.modalDescription}>
-                  Desenvolvimento de software para sistemas embarcados
-                </p>
-                <div className={styles.coWorkers}>
-                  <div className={styles.coWorker}>
-                    <Image
-                      src={userMock.avatar}
-                      alt={"co-worker"}
-                      width={32}
-                      height={32}
-                      className={styles.coWorkerImage}
-                    />
-                    <p className={styles.coWorkerInfo}>
-                      <strong>Co-worker Name</strong>
-                      <br />
-                      Software Engineer
-                    </p>
-                  </div>
-                  <div
-                    className={styles.coWorker}
-                    //onClick={openModal("recomendation", 1)}
-                  >
-                    <span className={styles.recomendation}></span>
-                    <Image
-                      src={userMock.avatar}
-                      alt={"co-worker"}
-                      width={32}
-                      height={32}
-                      className={styles.coWorkerImage}
-                    />
-                    <p className={styles.coWorkerInfo}>
-                      <strong>Co-worker Name</strong>
-                      <br />
-                      Software Engineer
-                    </p>
-                  </div>
-                  <div className={styles.coWorker}>
-                    <span className={styles.recomendation}></span>
-                    <Image
-                      src={userMock.avatar}
-                      alt={"co-worker"}
-                      width={32}
-                      height={32}
-                      className={styles.coWorkerImage}
-                    />
-                    <p className={styles.coWorkerInfo}>
-                      <strong>Co-worker Name</strong>
-                      <br />
-                      Software Engineer
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.modalFooter}>
-                <button onClick={closeModal}>Close</button>
-              </div>
-            </div>
+    <ModalProvider>
+      <div>
+        <div
+          className={isExpModal ? `${styles.page} ${styles.blur}` : styles.page}
+        >
+          <div ref={backgroundRef} className={styles.background}></div>
+          <div className={styles.container}>
+            <PortifolioIndice sections={["home", "aa"]} />
+            <UserCard
+              name={userMock.user.name}
+              description={userMock.description}
+              cover={userMock.cover}
+              avatar={userMock.avatar}
+              nodes={userMock.nodes}
+              followers={userMock.followers.length}
+              projects={userMock.projects.length}
+            />
+            <InformationArea profile={userMock} />
           </div>
-        )}
+        </div>
       </div>
-    </div>
+    </ModalProvider>
   );
 }

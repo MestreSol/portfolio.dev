@@ -1,34 +1,34 @@
-declare global{
+declare global {
   enum ProficiencyLevel_Language {
-    BASIC = 'BASIC',
-    INTERMEDIATE = 'INTERMEDIATE',
-    ADVANCED = 'ADVANCED',
-    FLUENT = 'FLUENT',
-    NATIVE = 'NATIVE'
+    BASIC = "BASIC",
+    INTERMEDIATE = "INTERMEDIATE",
+    ADVANCED = "ADVANCED",
+    FLUENT = "FLUENT",
+    NATIVE = "NATIVE",
   }
-  enum ProficiencyLevel_Skill{
-    BASIC = 'BASIC',
-    INTERMEDIATE = 'INTERMEDIATE',
-    ADVANCED = 'ADVANCED',
-    EXPERT = 'EXPERT'
+  enum ProficiencyLevel_Skill {
+    BASIC = "BASIC",
+    INTERMEDIATE = "INTERMEDIATE",
+    ADVANCED = "ADVANCED",
+    EXPERT = "EXPERT",
   }
   type Role = {
     id: number;
     name: string;
     description: string;
-  }
+  };
   type User = {
     id: number;
     name: string;
     email: string;
     password: string;
-  }
+  };
   type Social = {
     id: number;
     user: User;
     name: string;
     link: string;
-  }
+  };
   type Company = {
     id: number;
     name: string;
@@ -37,7 +37,7 @@ declare global{
     CNPJ: string;
     contacts: string[];
     image: string;
-  }
+  };
   type WorkExperience = {
     id: number;
     user: User;
@@ -55,7 +55,7 @@ declare global{
       role: string;
       avatar: string;
     }[];
-  }
+  };
   type AcademicExperience = {
     id: number;
     course: string;
@@ -76,7 +76,7 @@ declare global{
       role: string;
       avatar: string;
     }[];
-  }
+  };
   type Project = {
     id: number;
     about: string;
@@ -96,7 +96,7 @@ declare global{
       role: string;
       avatar: string;
     }[];
-  }
+  };
 
   type Team = {
     id: number;
@@ -108,27 +108,28 @@ declare global{
       user: User;
       role: string;
     }[];
-  }
+  };
 
   type Language = {
     id: number;
     name: string;
     description: string;
     proficiency: string;
-  }
+  };
 
   type Skill = {
     id: number;
     name: string;
     description: string;
     proficiency: string;
-  }
+  };
   type Profile = {
     id: number;
     user: User;
     avatar: string;
     cover: string;
     description: string;
+    about: string;
     socials: Social[];
     location: string;
     contacts: string[];
@@ -139,7 +140,7 @@ declare global{
     projects: Project[];
     languages: Language[];
     skills: Skill[];
-  }
+  };
 }
 
 export {};

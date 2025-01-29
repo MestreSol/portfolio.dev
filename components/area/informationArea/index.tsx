@@ -2,21 +2,38 @@ import styles from "@/app/portifolio/page.module.css";
 import Image from "next/image";
 import React from "react";
 import AboutMe from "@/components/atons/AboutMe";
+import { useModal } from "@/context/ModalContext";
+import Modal from "../Modal";
 type Props = {
   profile: Profile;
 };
 
 export default function InformationArea({ profile }: Props) {
+  const { isModalOpen, openModal, closeModal } = useModal();
+
+  const handleOpenModal = (type: string, id: number) => {
+    if (type === "workExp") {
+      const experience = profile.workExperience.find(
+        (experience) => experience.id === id,
+      );
+      console.log(experience);
+    } else if (type === "recomendation") {
+      console.log("Recomendation");
+    }
+
+    openModal();
+  };
+
   return (
     <div className={styles.informationArea}>
-      <AboutMe about={profile.description} />
+      <AboutMe about={profile.about} />
       <section className={styles.session} id={"workExp"}>
         <div className={styles.sessionTitle}>Work Experience</div>
         <div className={styles.sessionContent}>
           {profile.workExperience.map((experience) => (
             <div
               className={styles.experience}
-              //onClick={() => openModal("workExp", 1)}
+              onClick={() => handleOpenModal("workExp", experience.id)}
               key={experience.id}
             >
               <div className={styles.experienceHeader}>
@@ -112,6 +129,9 @@ export default function InformationArea({ profile }: Props) {
           </div>
         </div>
       </section>
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <p>Modal Content</p>
+      </Modal>
     </div>
   );
 }
