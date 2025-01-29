@@ -5,6 +5,7 @@
   margin-top: 10vh;
 }
 
+
 .background {
   position: absolute;
   top: 0;
@@ -417,5 +418,21 @@
   background: #1bd800;
   color: white;
   font-size: 1.125rem;
+  cursor: pointer;
+}
+
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.socialItem{
+  margin: 0 10px;
+}
+
+.socialIcon{
+  font-size: 24px;
+  filter: invert(100%);
   cursor: pointer;
 }
