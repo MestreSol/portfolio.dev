@@ -5,7 +5,6 @@
   margin-top: 10vh;
 }
 
-
 .background {
   position: absolute;
   top: 0;
@@ -424,23 +423,23 @@
   cursor: pointer;
 }
 
-.social{
+.social {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 15px;
 }
-.socialItem{
+.socialItem {
   margin: 0 10px;
 }
 
-.socialIcon{
+.socialIcon {
   font-size: 24px;
   filter: invert(100%);
   cursor: pointer;
 }
 
-.followButton{
+.followButton {
   padding: 10px;
   border: none;
   background: #1bd800;
@@ -475,7 +474,6 @@
 .skillProficiency progress::-webkit-progress-bar {
   background-color: #f3f3f3;
 }
-
 
 .skillProficiency progress.low {
   background-color: red;
@@ -541,4 +539,34 @@
 
 .skillProficiency progress.high {
   background-color: green;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.projectHeader {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.projectDescription {
+  display: flex;
+  gap: 10px;
+  font-size: 1.125rem;
+}
+.projectTeam {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  border-top: #cccccc 1px solid;
+  padding-top: 5px;
 }
