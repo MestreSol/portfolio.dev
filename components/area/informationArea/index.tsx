@@ -23,10 +23,15 @@ export default function InformationArea({ profile }: Props) {
 
     openModal();
   };
-
+  const getProgressClass = (proficiency: number) => {
+    if (proficiency < 33) return styles.low;
+    if (proficiency < 66) return styles.medium;
+    return styles.high;
+  };
   return (
     <div className={styles.informationArea}>
       <AboutMe about={profile.about} />
+      {profile.workExperience ? (
       <section className={styles.session} id={"workExp"}>
         <div className={styles.sessionTitle}>Work Experience</div>
         <div className={styles.sessionContent}>
@@ -80,7 +85,10 @@ export default function InformationArea({ profile }: Props) {
           ))}
         </div>
       </section>
-      <section className={styles.session} id={"academic"}>
+      ): null}
+      {profile.academicExperience ? (
+
+        <section className={styles.session} id={"academic"}>
         <div className={styles.sessionTitle}>Academic</div>
         <div className={styles.sessionContent}>
           {profile.academicExperience.map((academic) => (
@@ -112,23 +120,61 @@ export default function InformationArea({ profile }: Props) {
           ))}
         </div>
       </section>
+        ) : null}
+      {profile.courses ? (
       <section className={styles.licenses}>
-        <div className={styles.sessionTitle}>Licenses</div>
+        <div className={styles.sessionTitle}>Licenses and Courses</div>
         <div className={styles.sessionContent}>
-          <div className={styles.license}>
-            <div className={styles.licenseHeader}>
-              <div className={styles.licenseInfo}>
-                <div className={styles.licenseName}>License Name</div>
-                <div className={styles.licensor}>GOOGLE</div>
+          {profile.courses.map((license) => (
+            <div className={styles.license} key={license.id}>
+              <div className={styles.licenseHeader}>
+                <div className={styles.licenseInfo}>
+                  <div className={styles.licenseName}>{license.name}</div>
+                  <div className={styles.licensor}>{license.emissor}</div>
+                </div>
+                <div className={styles.date}>
+                  {license.startDate} - {license.endDate}
+                </div>
               </div>
-              <div className={styles.date}>2018 - 2021</div>
+              <div className={styles.licenseContent}>
+                <p className={styles.licenseDescription}>
+                  {license.description}
+                </p>
+              </div>
             </div>
-            <div className={styles.licenseContent}>
-              <p className={styles.licenseDescription}>License Description</p>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
+      ): null}
+      {profile.skills ? (
+        <section className={styles.skills}>
+          <div className={styles.sessionTitle}>Skills</div>
+          <div className={styles.sessionContent}>
+            <ul className={styles.skillsList}>
+            <div>
+      {profile.skills.map((skill) => (
+        <div className={styles.skill} key={skill.id}>
+          <div className={styles.skillName}>
+            {skill.verified && <span className={styles.verifiedLabel}></span>}
+            {skill.name}
+          </div>
+          <div className={styles.skillProficiency}>
+            <progress
+              value={skill.proficiency}
+              max="100"
+              className={getProgressClass(skill.proficiency)}
+            ></progress>
+          </div>
+          <div className={styles.skillProjects}>
+            {skill.projects} projects
+          </div>
+        </div>
+      ))}
+    </div>
+            </ul>
+          </div>
+        </section>
+        ): null}
       <Modal isOpen={isModalOpen} onClose={closeModal} experience={profile.workExperience[0]}>
       </Modal>
     </div>

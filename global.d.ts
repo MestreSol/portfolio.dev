@@ -28,6 +28,7 @@ declare global {
     user: User;
     name: string;
     link: string;
+
   };
   type Company = {
     id: number;
@@ -120,13 +121,37 @@ declare global {
     name: string;
     description: string;
     proficiency: string;
+
   };
 
   type Skill = {
     id: number;
     name: string;
     description: string;
-    proficiency: string;
+    proficiency: number;
+    verified: boolean;
+    projects: number;
+    works: number;
+  };
+  type Course = {
+    id: number;
+    name: string;
+    description: string;
+    emissor: string;
+    level: string;
+    startDate: string;
+    endDate: string;
+    activities: {
+      id: number;
+      description: string;
+    }[];
+    coWorkers: {
+      id: number;
+      name: string;
+      role: string;
+      avatar: string;
+    }[];
+    certify: string;
   };
   type Profile = {
     id: number;
@@ -145,6 +170,7 @@ declare global {
     projects: Project[];
     languages: Language[];
     skills: Skill[];
+    courses: Course[];
   };
 }
 

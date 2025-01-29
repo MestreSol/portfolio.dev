@@ -52,6 +52,39 @@ export default function UserCard(props: User) {
           </div>
         </div>
       </div>
+      <div className={styles.social}>
+        <a className={styles.socialItem} href="github.com">
+          <Image
+            src="/icons/github.svg"
+            alt="Github"
+            className={styles.socialIcon}
+            width={30}
+            height={30}
+          />
+        </a>
+        <a className={styles.socialItem} href="https://www.linkedin.com/">
+          <Image
+            src="/icons/linkedin.svg"
+            alt="Linkedin"
+            className={styles.socialIcon}
+            width={30}
+            height={30}
+          />
+        </a>
+        <a className={styles.socialItem} href="https://www.instagram.com/">
+          <Image
+            src="/icons/instagram.svg"
+            alt="Instagram"
+            className={styles.socialIcon}
+            width={30}
+            height={30}
+          />
+        </a>
+      </div>
+      <div>
+        <button className={styles.followButton}>Follow</button>
+      </div>
+
     </div>
   );
 }

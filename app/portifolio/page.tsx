@@ -176,6 +176,7 @@ export default function Portifolio() {
         name: "English",
         description: "Native speaker.",
         proficiency: "NATIVE",
+
       },
       {
         id: 2,
@@ -189,15 +190,45 @@ export default function Portifolio() {
         id: 1,
         name: "JavaScript",
         description: "Experienced in full-stack JavaScript development.",
-        proficiency: "EXPERT",
+        proficiency: 100,
+        verified: true,
+        projects: 10,
+        works: 5,
       },
       {
         id: 2,
         name: "Python",
         description: "Proficient in writing scalable back-end services.",
-        proficiency: "ADVANCED",
+        proficiency: 40,
+        verified: false,
+        projects: 10,
+        works: 5,
+
       },
     ],
+     courses: [
+      {
+        id: 1,
+        name: "Full-Stack Web Development",
+        description: "Learned to build web applications using MERN stack.",
+        emissor: "Udemy",
+        level: "Intermediate",
+        startDate: "2021-01-01",
+        endDate: "2021-12-31",
+        activities: [
+          { id: 1, description: "Built a social media app from scratch." },
+        ],
+        coWorkers: [
+          {
+            id: 1,
+            name: "Alice Smith",
+            role: "Fellow Student",
+            avatar: "https://picsum.photos/400",
+          },
+        ],
+        certify: "https://udemy.com/certificate",
+      },
+    ]
   };
   const backgroundRef = useRef<HTMLDivElement>(null);
 
