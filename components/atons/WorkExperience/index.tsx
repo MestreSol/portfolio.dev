@@ -1,5 +1,6 @@
-import styles from "@/app/portifolio/page.module.css";
-import Image from "next/image";
+import styles from "./styles.module.css";
+import global from "@/global/style.module.css";
+import CoworkerList from "../CoworkerList";
 
 type Props = {
   experience: WorkExperience[];
@@ -7,9 +8,9 @@ type Props = {
 
 export default function WorkExperience({ experience }: Props) {
   return (
-    <section className={styles.session} id={"workExp"}>
-      <div className={styles.sessionTitle}>Work Experience</div>
-      <div className={styles.sessionContent}>
+    <section className={global.session} id={"workExp"}>
+      <div className={global.sessionTitle}>Work Experience</div>
+      <div className={global.sessionContent}>
         {experience.map((experience) => (
           <div
             className={styles.experience}
@@ -35,26 +36,7 @@ export default function WorkExperience({ experience }: Props) {
                   </li>
                 ))}
               </ul>
-              <div className={styles.co_workers}>
-                <ul className={styles.co_workersList}>
-                  {experience.coWorkers.map((coWorker) => (
-                    <li className={styles.co_worker} key={coWorker.id}>
-                      <Image
-                        src={coWorker.avatar}
-                        alt={"co-worker"}
-                        width={32}
-                        height={32}
-                        className={styles.co_workerImage}
-                      />
-                      <p className={styles.co_workerInfo}>
-                        <strong>{coWorker.name}</strong>
-                        <br />
-                        {coWorker.role}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            <CoworkerList coWorkers={experience.coWorkers} />
             </div>
           </div>
         ))}
