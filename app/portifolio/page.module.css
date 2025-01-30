@@ -24,17 +24,6 @@
   padding: 20px;
 }
 
-.index {
-  font-size: 24px;
-  font-weight: 600;
-  text-align: center;
-  margin-left: 50px;
-  padding-right: 50px;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
 
 .social {
   display: flex;
@@ -54,120 +43,6 @@
   margin-left: 50px;
 }
 
-
-
-.session {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 20px;
-}
-.sessionTitle {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-top: 20px;
-}
-
-.sessionContent {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.paragraph {
-  font-size: 1.125rem;
-}
-
-.experience {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  margin-bottom: 15px;
-  cursor: pointer;
-}
-
-.experienceHeader {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-.company {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.companyName {
-  font-size: 1.5rem;
-  font-weight: 600;
-  font-style: italic;
-}
-.location {
-  font-size: 1.125rem;
-  font-weight: 400;
-  color: #1bd800;
-}
-
-.date {
-  font-size: 1.125rem;
-  font-weight: 400;
-  color: #1bd800;
-}
-
-.experienceContent {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.activetyList {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.activety {
-  display: flex;
-  gap: 10px;
-  font-size: 1.125rem;
-}
-
-.co_workers {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  margin-bottom: 15px;
-  border-top: #cccccc 1px solid;
-  padding-top: 5px;
-}
-
-.co_workersList {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  justify-content: space-between;
-}
-.co_worker {
-  display: flex;
-  gap: 10px;
-  font-size: 1.125rem;
-}
-.co_workerImage {
-  border-radius: 50%;
-}
-.co_workerInfo {
-  font-size: 1rem;
-}
-
-.sessionContent {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 20px;
-}
 .academic {
   display: flex;
   flex-direction: column;

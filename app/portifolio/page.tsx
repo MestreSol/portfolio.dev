@@ -275,7 +275,7 @@ export default function Portifolio() {
         <div className={styles.page}>
           <div ref={backgroundRef} className={styles.background}></div>
           <div className={styles.container}>
-            <PortifolioIndice sections={["home", "aa"]} />
+            <PortifolioIndice sections={["About Me", "Work Experience", "Academic", "Courses", "Languages", "Skills", "Projects"]} />
             <UserCard
               name={userMock.user.name}
               description={userMock.description}
