@@ -1,4 +1,4 @@
-import styles from "@/app/portifolio/page.module.css";
+import styles from "./style.module.css";
 import Image from "next/image";
 import React from "react";
 type User = {
@@ -14,7 +14,7 @@ export default function UserCard(props: User) {
   return (
     <div className={styles.user}>
       <div className={styles.userArea}>
-        <div className={styles.cover}>
+        <div className={styles.userCard}>
           <Image
             src={props.cover}
             alt={"Cover"}
@@ -31,11 +31,11 @@ export default function UserCard(props: User) {
           />
         </div>
       </div>
-      <div className={styles.information}>
+      <div className={styles.userInformation}>
         <div className={styles.userName}>{props.name}</div>
         <hr className={styles.line} />
-        <div className={styles.description}>{props.description}</div>
-        <div className={styles.metrics}>
+        <div className={styles.userDescription}>{props.description}</div>
+        <div className={styles.userMetrics}>
           <div className={styles.metricItem}>
             <div className={styles.metricTitle}>Nodes</div>
             <div className={styles.metric}>{props.nodes}</div>
