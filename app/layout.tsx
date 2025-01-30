@@ -1,7 +1,7 @@
 import React from "react";
-import "./globals.css";
 import { baseURL, home, person } from "@/app/resources";
 import GlobalMenu from "@/components/area/globalMenu";
+import "./globals.css";
 
 export async function generateMetadata() {
   return {
