@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 import { useEffect, useRef } from "react";
 import PortifolioIndice from "@/components/atons/portifolioIndice";
 import UserCard from "@/components/area/userCard";
-import InformationArea from "@/components/area/informationArea";
+import InformationArea from "@/components/area/InformationArea";
 import { ModalProvider } from "@/context/ModalContext";
 
 export default function Portifolio() {

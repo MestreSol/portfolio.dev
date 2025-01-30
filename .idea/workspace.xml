@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32258c14-9157-4b31-a89f-b60eec955752" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/area/AcademicArea/styles.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/area/CoursesArea/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/area/CoursesArea/style.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/area/InformationArea/style.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/area/LangagueArea/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/area/LangagueArea/style.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/area/Modal/style.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/area/SkillArea/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/portifolio/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/portifolio/page.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/userCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/userCard/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/userCard/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/portifolio/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/portifolio/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/Modal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/Modal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/informationArea/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/InformationArea/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/informationArea/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/AcademicArea/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/atons/WorkExperience/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/atons/WorkExperience/styles.module.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -72,23 +86,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;devl&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;npm.format.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\Web\\portfolio.dev\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Componentização",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "npm.format.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "D:\\Web\\portfolio.dev\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Web\portfolio.dev\public\icons" />
@@ -145,6 +159,7 @@
       <workItem from="1738113334385" duration="3000" />
       <workItem from="1738162450364" duration="1461000" />
       <workItem from="1738170729786" duration="1188000" />
+      <workItem from="1738270653635" duration="2460000" />
     </task>
     <servers />
   </component>

@@ -1,65 +1,42 @@
-.experience {
+
+.academic {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 100%;
   margin-bottom: 15px;
-  cursor: pointer;
 }
-
-.experienceHeader {
+.academicHeader {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
-
-.company {
+.institution {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.companyName {
+.institutionName {
   font-size: 1.5rem;
   font-weight: 600;
   font-style: italic;
 }
-
-.location {
+.course {
   font-size: 1.125rem;
   font-weight: 400;
   color: #1bd800;
 }
 
-.date {
-  font-size: 1.125rem;
-  font-weight: 400;
-  color: #1bd800;
+.note {
+  margin-bottom: 10px;
 }
-
-.experienceContent {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.activetyList {
+.subjectsList {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
-.activety {
+.subject {
   display: flex;
   gap: 10px;
   font-size: 1.125rem;
-}
-
-
-
-.sessionContent {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 20px;
 }

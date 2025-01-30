@@ -19,11 +19,7 @@ export default function Modal({
   return (
     <div>
       {experience ? (
-        <WorkExperienceModal
-          isOpen={isOpen}
-          onClose={onClose}
-          experience={experience}
-        />
+        <WorkExperienceModal isOpen={isOpen} onClose={onClose} experience={experience}/>
       ) : skill ? (
         <SkillModal isOpen={isOpen} onClose={onClose} skill={skill} />
       ) : null}

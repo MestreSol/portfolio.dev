@@ -1,0 +1,7 @@
+.informationArea {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50vw;
+  margin-left: 50px;
+}
