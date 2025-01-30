@@ -1,9 +1,9 @@
-import styles from "./style.module.css";
+import styles from "./InformationArea/style.module.css";
 import Image from "next/image";
 import React from "react";
 import AboutMe from "@/components/atons/AboutMe";
 import { useModal } from "@/context/ModalContext";
-import Modal from "../Modal";
+import Modal from "./Modal";
 import WorkExperience from "@/components/area/WorkExperienceArea";
 import AcademicArea from "@/components/area/AcademicArea";
 import CoursesArea from "@/components/area/CoursesArea";

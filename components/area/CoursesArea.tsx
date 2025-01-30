@@ -1,4 +1,4 @@
-import styles from "./style.module.css";
+import styles from "./CoursesArea.module.css";
 import global from "@/global/style.module.css";
 import React from "react";
 

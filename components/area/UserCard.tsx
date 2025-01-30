@@ -1,4 +1,4 @@
-import styles from "./style.module.css";
+import styles from "./userCard/style.module.css";
 import Image from "next/image";
 import React from "react";
 type User = {

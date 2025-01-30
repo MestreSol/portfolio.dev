@@ -1,7 +1,6 @@
-import styles from "./styles.module.css";
+import styles from "./AcademicArea.module.css";
 import global from "@/global/style.module.css";
 import React from "react";
-import {Global} from "@jest/types";
 
 type Props = {
   academicArray: AcademicExperience[];
