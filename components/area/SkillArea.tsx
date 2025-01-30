@@ -1,4 +1,5 @@
-import styles from "@/components/area/InformationArea/style.module.css";
+import styles from "./SkillArea.module.css";
+import global from "@/global/style.module.css";
 import React from "react";
 
 type Props = {
@@ -12,8 +13,8 @@ export default function SkillArea ({ skills }: Props) {
   };
   return(
     <section className={styles.skills}>
-      <div className={styles.sessionTitle}>Skills</div>
-      <div className={styles.sessionContent}>
+      <div className={global.sessionTitle}>Skills</div>
+      <div className={global.sessionContent}>
         <ul className={styles.skillsList}>
           <div>
             {skills.map((skill) => (

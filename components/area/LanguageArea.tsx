@@ -1,4 +1,5 @@
-import styles from "@/components/area/InformationArea/style.module.css";
+import styles from "./LanguageArea.module.css";
+import global from "@/global/style.module.css";
 import React from "react";
 
 type Props = {
@@ -12,8 +13,8 @@ export default function LanguageArea({ languages }: Props) {
   };
   return (
     <section className={styles.skills}>
-      <div className={styles.sessionTitle}>Languages</div>
-      <div className={styles.sessionContent}>
+      <div className={global.sessionTitle}>Languages</div>
+      <div className={global.sessionContent}>
         <ul className={styles.skillsList}>
           <div>
             {languages.map((skill) => (

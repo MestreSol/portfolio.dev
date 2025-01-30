@@ -1,4 +1,4 @@
-import styles from "./InformationArea/style.module.css";
+import styles from "./InformationArea.module.css";
 import Image from "next/image";
 import React from "react";
 import AboutMe from "@/components/atons/AboutMe";
@@ -8,7 +8,7 @@ import WorkExperience from "@/components/area/WorkExperienceArea";
 import AcademicArea from "@/components/area/AcademicArea";
 import CoursesArea from "@/components/area/CoursesArea";
 import SkillArea from "@/components/area/SkillArea";
-import LanguageArea from "@/components/area/LangagueArea";
+import LanguageArea from "@/components/area/LanguageArea";
 type Props = {
   profile: Profile;
 };
