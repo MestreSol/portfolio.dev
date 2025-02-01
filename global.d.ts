@@ -81,7 +81,7 @@ declare global {
   type Project = {
     id: number;
     about: string;
-    Team: Team;
+    Team: Team[];
     user: User;
     name: string;
     description: string;
@@ -92,6 +92,7 @@ declare global {
       description: string;
     }[];
     coWorkers: CoWorker[];
+    image: string;
   };
 
   type Team = {

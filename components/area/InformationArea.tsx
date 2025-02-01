@@ -1,5 +1,4 @@
 import styles from "./InformationArea.module.css";
-import Image from "next/image";
 import React from "react";
 import AboutMe from "@/components/atons/AboutMe";
 import { useModal } from "@/context/ModalContext";
@@ -9,6 +8,7 @@ import AcademicArea from "@/components/area/AcademicArea";
 import CoursesArea from "@/components/area/CoursesArea";
 import SkillArea from "@/components/area/SkillArea";
 import LanguageArea from "@/components/area/LanguageArea";
+import ProjectArea from "./ProjectArea";
 type Props = {
   profile: Profile;
 };
@@ -50,52 +50,7 @@ export default function InformationArea({ profile }: Props) {
         <SkillArea skills={profile.skills} />
       ) : null}
       {profile.projects ? (
-        <section className={styles.projects}>
-          <div className={styles.sessionTitle}>Projects</div>
-          <div className={styles.sessionContent}>
-            <ul className={styles.projectsList}>
-              <div>
-                {profile.projects.map((projects) => (
-                  <div className={styles.project} key={projects.id}>
-                    <div className={styles.projectHeader}>
-                      <h2 className={styles.projectName}>{projects.name}</h2>
-                      <div className={styles.projectDate}>
-                        {projects.startDate} - {projects.endDate}
-                      </div>
-                    </div>
-                    <div className={styles.projectDescription}>
-                      <div className={styles.projectAbout}>
-                        {projects.about}
-                      </div>
-                      <Image
-                        src={projects.Team.image}
-                        width={400}
-                        height={200}
-                        alt=""
-                      ></Image>
-                    </div>
-                    <div className={styles.projectTeam}>
-                      <div className={styles.co_worker}>
-                        <Image
-                          src={projects.Team.image}
-                          alt={"co-worker"}
-                          width={32}
-                          height={32}
-                          className={styles.co_workerImage}
-                        />
-                        <p className={styles.co_workerInfo}>
-                          <strong>{projects.Team.name}</strong>
-                          <br />
-                          Made by
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </ul>
-          </div>
-        </section>
+        <ProjectArea projects={profile.projects} />
       ) : null}
       <Modal
         isOpen={isModalOpen}
