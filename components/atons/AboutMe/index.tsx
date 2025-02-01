@@ -1,5 +1,5 @@
 import styles from "./style.module.css";
-import global from "@/global/style.module.css"
+import global from "@/global/style.module.css";
 import React from "react";
 type AboutMeProps = {
   about: string;

@@ -138,7 +138,7 @@ export default function Portifolio() {
             name: "Team Awesome",
             description: "A team of talented developers.",
             image: "https://picsum.photos/400",
-            members: []
+            members: [],
           },
         ],
         about: "",
@@ -146,11 +146,11 @@ export default function Portifolio() {
           id: 0,
           name: "",
           email: "",
-          password: ""
+          password: "",
         },
         activities: [],
-        coWorkers: []
-      }
+        coWorkers: [],
+      },
     ],
     languages: [
       {
@@ -257,7 +257,17 @@ export default function Portifolio() {
         <div className={styles.page}>
           <div ref={backgroundRef} className={styles.background}></div>
           <div className={styles.container}>
-            <PortifolioIndice sections={["About Me", "Work Experience", "Academic", "Courses", "Languages", "Skills", "Projects"]} />
+            <PortifolioIndice
+              sections={[
+                "About Me",
+                "Work Experience",
+                "Academic",
+                "Courses",
+                "Languages",
+                "Skills",
+                "Projects",
+              ]}
+            />
             <UserCard
               name={userMock.user.name}
               description={userMock.description}

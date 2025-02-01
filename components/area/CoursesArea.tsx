@@ -4,7 +4,7 @@ import React from "react";
 
 type Props = {
   courses: Course[];
-}
+};
 
 export default function CoursesArea({ courses }: Props) {
   return (
@@ -23,9 +23,7 @@ export default function CoursesArea({ courses }: Props) {
               </div>
             </div>
             <div className={styles.licenseContent}>
-              <p className={styles.licenseDescription}>
-                {license.description}
-              </p>
+              <p className={styles.licenseDescription}>{license.description}</p>
             </div>
           </div>
         ))}

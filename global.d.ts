@@ -17,7 +17,7 @@ declare global {
     name: string;
     role: string;
     avatar: string;
-  }
+  };
   type Role = {
     id: number;
     name: string;
@@ -55,7 +55,7 @@ declare global {
       id: number;
       description: string;
     }[];
-    coWorkers:CoWorker[];
+    coWorkers: CoWorker[];
     usedSkills: {
       id: number;
       name: string;

@@ -4,14 +4,14 @@ import React from "react";
 
 type Props = {
   skills: Skill[];
-}
-export default function SkillArea ({ skills }: Props) {
+};
+export default function SkillArea({ skills }: Props) {
   const getProgressClass = (proficiency: number) => {
     if (proficiency < 33) return styles.low;
     if (proficiency < 66) return styles.medium;
     return styles.high;
   };
-  return(
+  return (
     <section className={styles.skills}>
       <div className={global.sessionTitle}>Skills</div>
       <div className={global.sessionContent}>

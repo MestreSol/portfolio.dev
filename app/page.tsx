@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import styles from "./page.module.css";
+import global from "@/global/style.module.css";
 export default function Home() {
   const backgroundRef = useRef<HTMLDivElement>(null);
 

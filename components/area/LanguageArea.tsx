@@ -3,8 +3,8 @@ import global from "@/global/style.module.css";
 import React from "react";
 
 type Props = {
-    languages: Language[];
-}
+  languages: Language[];
+};
 export default function LanguageArea({ languages }: Props) {
   const getProgressClass = (proficiency: number) => {
     if (proficiency < 33) return styles.low;

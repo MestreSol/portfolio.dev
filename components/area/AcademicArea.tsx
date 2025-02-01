@@ -4,7 +4,7 @@ import React from "react";
 
 type Props = {
   academicArray: AcademicExperience[];
-}
+};
 
 export default function AcademicArea({ academicArray }: Props) {
   return (
@@ -40,5 +40,5 @@ export default function AcademicArea({ academicArray }: Props) {
         ))}
       </div>
     </section>
-  )
+  );
 }

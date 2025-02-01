@@ -1,4 +1,3 @@
-
 .skill {
   display: flex;
   justify-content: space-between;
@@ -25,7 +24,6 @@
 .skillProficiency progress::-webkit-progress-bar {
   background-color: #f3f3f3;
 }
-
 
 .skillProficiency progress.low {
   background-color: red;
@@ -57,14 +55,10 @@
   font-size: 24px;
 }
 
-
-
 .social {
   display: flex;
   gap: 10px;
 }
-
-
 
 .verifiedLabel {
   position: absolute;

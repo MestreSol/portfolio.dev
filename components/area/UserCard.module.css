@@ -39,7 +39,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.userInformation{
+.userInformation {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,24 +91,23 @@
   text-align: center;
 }
 
-.social{
+.social {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 15px;
 }
-.socialItem{
+.socialItem {
   margin: 0 10px;
 }
 
-.socialIcon{
+.socialIcon {
   font-size: 24px;
   filter: invert(100%);
   cursor: pointer;
 }
 
-
-.followButton{
+.followButton {
   padding: 10px;
   border: none;
   background: #1bd800;

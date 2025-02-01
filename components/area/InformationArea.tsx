@@ -31,27 +31,19 @@ export default function InformationArea({ profile }: Props) {
 
   return (
     <div className={styles.informationArea}>
-      {profile.about && (
-        <AboutMe about={profile.about} />
-      )}
+      {profile.about && <AboutMe about={profile.about} />}
       {profile.workExperience && (
         <WorkExperience experience={profile.workExperience} />
       )}
       {profile.academicExperience && (
-        <AcademicArea academicArray={profile.academicExperience}  />
+        <AcademicArea academicArray={profile.academicExperience} />
       )}
-      {profile.courses && (
-        <CoursesArea courses={profile.courses} />
-      )}
+      {profile.courses && <CoursesArea courses={profile.courses} />}
       {profile.languages ? (
         <LanguageArea languages={profile.languages} />
       ) : null}
-      {profile.skills ? (
-        <SkillArea skills={profile.skills} />
-      ) : null}
-      {profile.projects ? (
-        <ProjectArea projects={profile.projects} />
-      ) : null}
+      {profile.skills ? <SkillArea skills={profile.skills} /> : null}
+      {profile.projects ? <ProjectArea projects={profile.projects} /> : null}
       <Modal
         isOpen={isModalOpen}
         onClose={closeModal}
