@@ -1,5 +1,3 @@
-
-
 html,
 body {
   height: 100%;
@@ -31,5 +29,11 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
   }
 }

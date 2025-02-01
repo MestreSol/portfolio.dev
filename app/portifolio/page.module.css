@@ -24,3 +24,13 @@
   padding: 20px;
 }
 
+@media (max-width: 768px) {
+  .page {
+    margin-top: 5vh;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+

@@ -54,3 +54,36 @@
     height: 200px;
     object-fit: cover;
 }
+
+@media (max-width: 768px) {
+  .projectList {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .project {
+    padding: 5px;
+  }
+
+  .projectHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .projectName {
+    font-size: 18px;
+  }
+
+  .projectDate {
+    font-size: 14px;
+  }
+
+  .projectDescriptionArea {
+    flex-direction: column;
+  }
+
+  .projectImage {
+    width: 100%;
+    height: auto;
+  }
+}

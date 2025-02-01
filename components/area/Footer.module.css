@@ -16,3 +16,10 @@
 .footer a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

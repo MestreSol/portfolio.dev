@@ -22,3 +22,27 @@
 .teamAbout{
   font-size:1rem;
 }
+
+@media (max-width: 768px) {
+  .teamList {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .team {
+    font-size: 1rem;
+  }
+
+  .teamImage {
+    width: 30px;
+    height: 30px;
+  }
+
+  .teamName {
+    font-size: 1rem;
+  }
+
+  .teamAbout {
+    font-size: 0.875rem;
+  }
+}
