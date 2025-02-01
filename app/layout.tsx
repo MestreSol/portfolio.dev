@@ -2,6 +2,7 @@ import React from "react";
 import { baseURL, home, person } from "@/app/resources";
 import GlobalMenu from "@/components/area/GlobalMenu";
 import "./globals.css";
+import Footer from "@/components/area/Footer";
 
 export async function generateMetadata() {
   return {
@@ -43,6 +44,7 @@ export default function RootLayout({
       <body>
         <GlobalMenu></GlobalMenu>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );
