@@ -3,8 +3,8 @@ import React from "react";
 import styles from "./page.module.css";
 import { useEffect, useRef } from "react";
 import PortifolioIndice from "@/components/atons/portifolioIndice";
-import UserCard from "@/components/area/userCard";
-import InformationArea from "@/components/area/informationArea";
+import UserCard from "@/components/area/UserCard";
+import InformationArea from "@/components/area/InformationArea";
 import { ModalProvider } from "@/context/ModalContext";
 
 export default function Portifolio() {
@@ -127,47 +127,29 @@ export default function Portifolio() {
     projects: [
       {
         id: 1,
-        about: "A web-based project management tool.",
-        Team: {
-          id: 1,
-          name: "Agile Devs",
-          description: "A team of developers building innovative solutions.",
-          image: "https://picsum.photos/400",
-          members: [
-            {
-              id: 1,
-              user: {
-                id: 1,
-                name: "John Doe",
-                email: "johndoe@example.com",
-                password: "hashedpassword123",
-              },
-              role: "Lead Developer",
-            },
-          ],
-        },
-        user: {
-          id: 1,
-          name: "John Doe",
-          email: "johndoe@example.com",
-          password: "hashedpassword123",
-        },
-        name: "TaskFlow",
-        description: "A platform for managing tasks and team workflows.",
-        startDate: "2022-05-01",
-        endDate: "2023-10-31",
-        activities: [
-          { id: 1, description: "Developed the back-end API." },
-          { id: 2, description: "Designed the UI/UX." },
-        ],
-        coWorkers: [
+        name: "Social Media App",
+        description: "Built a social media app using MERN stack.",
+        image: "https://picsum.photos/400",
+        startDate: "2021-01-01",
+        endDate: "2021-12-31",
+        Team: [
           {
             id: 1,
-            name: "Eve Martinez",
-            role: "UI/UX Designer",
-            avatar: "https://picsum.photos/400",
+            name: "Team Awesome",
+            description: "A team of talented developers.",
+            image: "https://picsum.photos/400",
+            members: [],
           },
         ],
+        about: "",
+        user: {
+          id: 0,
+          name: "",
+          email: "",
+          password: "",
+        },
+        activities: [],
+        coWorkers: [],
       },
     ],
     languages: [
@@ -275,7 +257,17 @@ export default function Portifolio() {
         <div className={styles.page}>
           <div ref={backgroundRef} className={styles.background}></div>
           <div className={styles.container}>
-            <PortifolioIndice sections={["home", "aa"]} />
+            <PortifolioIndice
+              sections={[
+                "About Me",
+                "Work Experience",
+                "Academic",
+                "Courses",
+                "Languages",
+                "Skills",
+                "Projects",
+              ]}
+            />
             <UserCard
               name={userMock.user.name}
               description={userMock.description}

@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32258c14-9157-4b31-a89f-b60eec955752" name="Changes" comment="">
+    <list default="true" id="32258c14-9157-4b31-a89f-b60eec955752" name="Changes" comment="Refactor GlobalMenu component; rename GlobalMenu.css to GlobalMenu.module.css and update class references for improved styling and maintainability">
+      <change afterPath="$PROJECT_DIR$/components/area/SkillArea.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/portifolio/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/portifolio/page.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/userCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/userCard/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/userCard/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/portifolio/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/portifolio/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/InformationArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/InformationArea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/LanguageArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/LanguageArea.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/LanguageArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/LanguageArea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/SkillArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/SkillArea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/UserCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/UserCard.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,13 +24,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "MestreSol"
+  }
+}]]></component>
   <component name="GitToolBoxStore">
     <option name="recentBranches">
       <RecentBranches>
@@ -57,6 +72,12 @@
       </RecentBranches>
     </option>
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/MestreSol/portfolio.dev.git",
+    "accountId": "24e4e63e-0b4f-4e7a-b757-1b660c1be4e1"
+  }
+}]]></component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
@@ -72,25 +93,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;devl&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;npm.format.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\Web\\portfolio.dev\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Componentização",
+    "ignore.virus.scanning.warn.message": "true",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "npm.format.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "D:\\Web\\portfolio.dev\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Web\portfolio.dev\components\area" />
       <recent name="D:\Web\portfolio.dev\public\icons" />
     </key>
   </component>
@@ -145,10 +168,54 @@
       <workItem from="1738113334385" duration="3000" />
       <workItem from="1738162450364" duration="1461000" />
       <workItem from="1738170729786" duration="1188000" />
+      <workItem from="1738270653635" duration="2460000" />
+      <workItem from="1738273454791" duration="3513000" />
     </task>
+    <task id="LOCAL-00001" summary="Refactor components and styles; introduce AcademicArea, CoursesArea, and WorkExperienceArea components for improved structure and maintainability, and update styles for better organization and readability">
+      <option name="closed" value="true" />
+      <created>1738273487440</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738273487440</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Refactor components and styles; rename and reorganize UserCard, GlobalMenu, InformationArea, AcademicArea, and CoursesArea components for improved structure and maintainability, and update styles for better organization and readability">
+      <option name="closed" value="true" />
+      <created>1738273757908</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738273757908</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Refactor GlobalMenu component; rename GlobalMenu.css to GlobalMenu.module.css and update class references for improved styling and maintainability">
+      <option name="closed" value="true" />
+      <created>1738274466732</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738274466733</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactor components and styles; introduce AcademicArea, CoursesArea, and WorkExperienceArea components for improved structure and maintainability, and update styles for better organization and readability" />
+    <MESSAGE value="Refactor components and styles; rename and reorganize UserCard, GlobalMenu, InformationArea, AcademicArea, and CoursesArea components for improved structure and maintainability, and update styles for better organization and readability" />
+    <MESSAGE value="Refactor GlobalMenu component; rename GlobalMenu.css to GlobalMenu.module.css and update class references for improved styling and maintainability" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor GlobalMenu component; rename GlobalMenu.css to GlobalMenu.module.css and update class references for improved styling and maintainability" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/area/InformationArea.tsx</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

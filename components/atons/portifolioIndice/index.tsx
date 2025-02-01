@@ -1,4 +1,4 @@
-import styles from "@/app/portifolio/page.module.css";
+import styles from "./style.module.css";
 import React from "react";
 
 type PortifolioIndiceProps = {
