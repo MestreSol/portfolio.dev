@@ -2,17 +2,19 @@ import styles from "./AcademicArea.module.css";
 import global from "@/global/style.module.css";
 import React from "react";
 
+// Define the props type for the component
 type Props = {
   academicArray: AcademicExperience[];
 };
 
+// Functional component to render the academic area
 export default function AcademicArea({ academicArray }: Props) {
   return (
     <section className={global.session} id={"academic"}>
       <div className={global.sessionTitle}>Academic</div>
       <div className={global.sessionContent}>
         {academicArray.map((academic: AcademicExperience) => (
-          <div className={styles.academic} key={academic.institution}>
+          <div className={styles.academic} key={academic.id}>
             <div className={styles.academicHeader}>
               <div className={styles.institution}>
                 <div className={styles.institutionName}>

@@ -4,11 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32258c14-9157-4b31-a89f-b60eec955752" name="Changes" comment="Refactor components and styles; rename and reorganize UserCard, GlobalMenu, InformationArea, LanguageArea, and SkillArea components for improved structure and maintainability, and update styles for better organization and readability">
+    <list default="true" id="32258c14-9157-4b31-a89f-b60eec955752" name="Changes" comment="Add test for About component and update package.json to include watch mode for Jest">
+      <change afterPath="$PROJECT_DIR$/app/api/portfolio/[username].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/portifolio/[slug]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/portifolio/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/portifolio/page.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/portifolio/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/portifolio/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/AcademicArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/AcademicArea.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/AcademicArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/AcademicArea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/CoursesArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/CoursesArea.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/CoursesArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/CoursesArea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/Footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/Footer.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/GlobalMenu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/GlobalMenu.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/InformationArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/InformationArea.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/InformationArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/InformationArea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/LanguageArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/LanguageArea.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/LanguageArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/LanguageArea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/Modal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/Modal.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/Modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/Modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/ProjectArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/ProjectArea.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/ProjectArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/ProjectArea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/SkillArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/SkillArea.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/SkillArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/SkillArea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/TeamList.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/TeamList.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/TeamList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/TeamList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/UserCard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/UserCard.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/atons/AboutMe/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/atons/AboutMe/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/atons/CoworkerList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/atons/CoworkerList/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/atons/CoworkerList/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/atons/CoworkerList/style.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/atons/WorkExperienceCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/atons/WorkExperienceCard/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/atons/portifolioIndice/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/atons/portifolioIndice/style.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modals/Skill/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modals/Skill/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modals/WorkExperience/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modals/WorkExperience/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/context/ModalContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/context/ModalContext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/global.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/WorkExperienceArea.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/WorkExperienceArea.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,13 +54,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="CSS File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Add-Test" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -44,7 +85,11 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="devl" />
-                    <option name="lastUsedInstant" value="1738594330" />
+                    <option name="lastUsedInstant" value="1738597008" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="Add-Test" />
+                    <option name="lastUsedInstant" value="1738596544" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="implements-styled-component" />
@@ -90,6 +135,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Jest.About Section.executor": "Run",
+    "Jest.About Section.should render the About section.executor": "Run",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "devl",
     "ignore.virus.scanning.warn.message": "true",
@@ -98,6 +145,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "D:/Web/portfolio.dev/node_modules/jest",
     "nodejs_package_manager_path": "npm",
     "npm.dev.executor": "Run",
     "npm.format.executor": "Run",
@@ -113,6 +161,31 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
+    <configuration name="About Section" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/components/Atons/about.test.jsx" />
+      <test-names>
+        <test-name value="About Section" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="About Section.should render the About section" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/components/Atons/about.test.jsx" />
+      <test-names>
+        <test-name value="About Section" />
+        <test-name value="should render the About section" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -137,6 +210,9 @@
       <list>
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.format" />
+        <item itemvalue="Jest.About Section" />
+        <item itemvalue="Jest.About Section.should render the About section" />
+        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +242,7 @@
       <workItem from="1738270653635" duration="2460000" />
       <workItem from="1738273454791" duration="5899000" />
       <workItem from="1738424318510" duration="2360000" />
-      <workItem from="1738593732615" duration="2359000" />
+      <workItem from="1738593732615" duration="6013000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor components and styles; introduce AcademicArea, CoursesArea, and WorkExperienceArea components for improved structure and maintainability, and update styles for better organization and readability">
       <option name="closed" value="true" />
@@ -200,18 +276,47 @@
       <option name="project" value="LOCAL" />
       <updated>1738278218494</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update package dependencies and Jest configuration for improved testing and development experience">
+      <option name="closed" value="true" />
+      <created>1738596475122</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738596475122</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add test for About component and update package.json to include watch mode for Jest">
+      <option name="closed" value="true" />
+      <created>1738596972945</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738596972945</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactor components and styles; introduce AcademicArea, CoursesArea, and WorkExperienceArea components for improved structure and maintainability, and update styles for better organization and readability" />
     <MESSAGE value="Refactor components and styles; rename and reorganize UserCard, GlobalMenu, InformationArea, AcademicArea, and CoursesArea components for improved structure and maintainability, and update styles for better organization and readability" />
     <MESSAGE value="Refactor GlobalMenu component; rename GlobalMenu.css to GlobalMenu.module.css and update class references for improved styling and maintainability" />
     <MESSAGE value="Refactor components and styles; rename and reorganize UserCard, GlobalMenu, InformationArea, LanguageArea, and SkillArea components for improved structure and maintainability, and update styles for better organization and readability" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor components and styles; rename and reorganize UserCard, GlobalMenu, InformationArea, LanguageArea, and SkillArea components for improved structure and maintainability, and update styles for better organization and readability" />
+    <MESSAGE value="Update package dependencies and Jest configuration for improved testing and development experience" />
+    <MESSAGE value="Add test for About component and update package.json to include watch mode for Jest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add test for About component and update package.json to include watch mode for Jest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

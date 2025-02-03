@@ -94,7 +94,6 @@ declare global {
     coWorkers: CoWorker[];
     image: string;
   };
-
   type Team = {
     id: number;
     name: string;
@@ -106,14 +105,12 @@ declare global {
       role: string;
     }[];
   };
-
   type Language = {
     id: number;
     name: string;
     description: string;
     proficiency: number;
   };
-
   type Skill = {
     id: number;
     name: string;
