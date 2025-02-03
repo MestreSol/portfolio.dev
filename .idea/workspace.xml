@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32258c14-9157-4b31-a89f-b60eec955752" name="Changes" comment="Refactor GlobalMenu component; rename GlobalMenu.css to GlobalMenu.module.css and update class references for improved styling and maintainability">
-      <change afterPath="$PROJECT_DIR$/components/area/SkillArea.module.css" afterDir="false" />
+    <list default="true" id="32258c14-9157-4b31-a89f-b60eec955752" name="Changes" comment="Refactor components and styles; rename and reorganize UserCard, GlobalMenu, InformationArea, LanguageArea, and SkillArea components for improved structure and maintainability, and update styles for better organization and readability">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/portifolio/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/portifolio/page.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/portifolio/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/portifolio/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/InformationArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/InformationArea.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/LanguageArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/LanguageArea.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/LanguageArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/LanguageArea.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/SkillArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/SkillArea.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/UserCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/UserCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/WorkExperienceArea.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/WorkExperienceArea.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,20 +19,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
-        <option value="TypeScript File" />
         <option value="CSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "MestreSol"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MestreSol&quot;
   }
-}]]></component>
+}</component>
   <component name="GitToolBoxStore">
     <option name="recentBranches">
       <RecentBranches>
@@ -49,7 +44,7 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="devl" />
-                    <option name="lastUsedInstant" value="1738187915" />
+                    <option name="lastUsedInstant" value="1738594330" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="implements-styled-component" />
@@ -72,12 +67,12 @@
       </RecentBranches>
     </option>
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MestreSol/portfolio.dev.git",
-    "accountId": "24e4e63e-0b4f-4e7a-b757-1b660c1be4e1"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MestreSol/portfolio.dev.git&quot;,
+    &quot;accountId&quot;: &quot;24e4e63e-0b4f-4e7a-b757-1b660c1be4e1&quot;
   }
-}]]></component>
+}</component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
@@ -96,7 +91,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Componentização",
+    "git-widget-placeholder": "devl",
     "ignore.virus.scanning.warn.message": "true",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -140,8 +135,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.format" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.format" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +164,9 @@
       <workItem from="1738162450364" duration="1461000" />
       <workItem from="1738170729786" duration="1188000" />
       <workItem from="1738270653635" duration="2460000" />
-      <workItem from="1738273454791" duration="3513000" />
+      <workItem from="1738273454791" duration="5899000" />
+      <workItem from="1738424318510" duration="2360000" />
+      <workItem from="1738593732615" duration="2359000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor components and styles; introduce AcademicArea, CoursesArea, and WorkExperienceArea components for improved structure and maintainability, and update styles for better organization and readability">
       <option name="closed" value="true" />
@@ -195,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738274466733</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactor components and styles; rename and reorganize UserCard, GlobalMenu, InformationArea, LanguageArea, and SkillArea components for improved structure and maintainability, and update styles for better organization and readability">
+      <option name="closed" value="true" />
+      <created>1738278218494</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738278218494</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,14 +210,14 @@
     <MESSAGE value="Refactor components and styles; introduce AcademicArea, CoursesArea, and WorkExperienceArea components for improved structure and maintainability, and update styles for better organization and readability" />
     <MESSAGE value="Refactor components and styles; rename and reorganize UserCard, GlobalMenu, InformationArea, AcademicArea, and CoursesArea components for improved structure and maintainability, and update styles for better organization and readability" />
     <MESSAGE value="Refactor GlobalMenu component; rename GlobalMenu.css to GlobalMenu.module.css and update class references for improved styling and maintainability" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor GlobalMenu component; rename GlobalMenu.css to GlobalMenu.module.css and update class references for improved styling and maintainability" />
+    <MESSAGE value="Refactor components and styles; rename and reorganize UserCard, GlobalMenu, InformationArea, LanguageArea, and SkillArea components for improved structure and maintainability, and update styles for better organization and readability" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor components and styles; rename and reorganize UserCard, GlobalMenu, InformationArea, LanguageArea, and SkillArea components for improved structure and maintainability, and update styles for better organization and readability" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/components/area/InformationArea.tsx</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
