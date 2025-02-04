@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@/app/portifolio/page.module.css";
+import styles from "@/app/portfolio/page.module.css";
 type ModalProps = {
   isOpen: boolean;
   onClose: () => void;

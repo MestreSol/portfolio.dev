@@ -1,0 +1,56 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.experienceHeader {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.company {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.companyName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.location {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #1bd800;
+}
+
+.date {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #1bd800;
+}
+
+.experienceContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.activetyList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.activety {
+  display: flex;
+  gap: 10px;
+  font-size: 1.125rem;
+}

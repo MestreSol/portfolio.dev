@@ -12,6 +12,12 @@ declare global {
     ADVANCED = "ADVANCED",
     EXPERT = "EXPERT",
   }
+  type CoWorker = {
+    id: number;
+    name: string;
+    role: string;
+    avatar: string;
+  };
   type Role = {
     id: number;
     name: string;
@@ -49,12 +55,7 @@ declare global {
       id: number;
       description: string;
     }[];
-    coWorkers: {
-      id: number;
-      name: string;
-      role: string;
-      avatar: string;
-    }[];
+    coWorkers: CoWorker[];
     usedSkills: {
       id: number;
       name: string;
@@ -75,17 +76,12 @@ declare global {
       id: number;
       description: string;
     }[];
-    coWorkers: {
-      id: number;
-      name: string;
-      role: string;
-      avatar: string;
-    }[];
+    coWorkers: CoWorker[];
   };
   type Project = {
     id: number;
     about: string;
-    Team: Team;
+    Team: Team[];
     user: User;
     name: string;
     description: string;
@@ -95,14 +91,9 @@ declare global {
       id: number;
       description: string;
     }[];
-    coWorkers: {
-      id: number;
-      name: string;
-      role: string;
-      avatar: string;
-    }[];
+    coWorkers: CoWorker[];
+    image: string;
   };
-
   type Team = {
     id: number;
     name: string;
@@ -114,14 +105,12 @@ declare global {
       role: string;
     }[];
   };
-
   type Language = {
     id: number;
     name: string;
     description: string;
     proficiency: number;
   };
-
   type Skill = {
     id: number;
     name: string;
@@ -143,12 +132,7 @@ declare global {
       id: number;
       description: string;
     }[];
-    coWorkers: {
-      id: number;
-      name: string;
-      role: string;
-      avatar: string;
-    }[];
+    coWorkers: CoWorker[];
     certify: string;
   };
   type Profile = {

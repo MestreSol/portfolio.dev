@@ -22,8 +22,6 @@ const newsletter = {
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
@@ -48,7 +46,7 @@ const social = [
 
 const home = {
   label: "Home",
-  title: `${person.name}'s Portfolio`,
+  title: `Portfy`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>Design engineer and builder</>,
   subline: (

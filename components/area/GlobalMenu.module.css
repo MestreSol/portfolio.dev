@@ -91,3 +91,24 @@
 .userArea {
   color: #cccccc;
 }
+
+@media (max-width: 768px) {
+  .menu {
+    padding: 0 10px;
+    height: 50px;
+  }
+
+  .menuItem {
+    font-size: 14px;
+    padding: 7px;
+  }
+
+  .menuIcon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .menuText {
+    font-size: 14px;
+  }
+}

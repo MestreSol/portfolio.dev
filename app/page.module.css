@@ -175,6 +175,33 @@ a.secondary {
   }
 }
 
+@media (max-width: 768px) {
+  .page {
+    padding: 40px;
+    gap: 32px;
+  }
+
+  .main {
+    gap: 16px;
+  }
+
+  .ctas {
+    flex-direction: column;
+  }
+
+  .ctas a {
+    font-size: 14px;
+    height: 40px;
+    padding: 0 16px;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   .logo {
     filter: invert();
