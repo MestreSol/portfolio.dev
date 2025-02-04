@@ -183,9 +183,9 @@ export default function Portifolio({ params }: Props) {
 
     const fetchUserMock = async () => {
       try {
-        const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/portfolio/getPortfolios?user=${username}`
-        );
+        const apiUrl = `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/portfolio/getPortfolios?user=${username}`;
+        console.log("API URL:", apiUrl); // Log para depuração
+        const response = await fetch(apiUrl);
         const data = await response.json();
         setUserMock(data);
       } catch (error) {
