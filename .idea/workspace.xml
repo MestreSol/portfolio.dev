@@ -5,46 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32258c14-9157-4b31-a89f-b60eec955752" name="Changes" comment="Add test for About component and update package.json to include watch mode for Jest">
-      <change afterPath="$PROJECT_DIR$/app/api/portfolio/[username].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/portifolio/[slug]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/portifolio/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/portifolio/page.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/portifolio/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/portifolio/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/AcademicArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/AcademicArea.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/AcademicArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/AcademicArea.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/CoursesArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/CoursesArea.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/CoursesArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/CoursesArea.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/Footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/Footer.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/GlobalMenu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/GlobalMenu.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/InformationArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/InformationArea.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/InformationArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/InformationArea.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/LanguageArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/LanguageArea.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/LanguageArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/LanguageArea.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/Modal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/Modal.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/Modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/Modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/ProjectArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/ProjectArea.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/ProjectArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/ProjectArea.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/SkillArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/SkillArea.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/SkillArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/SkillArea.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/TeamList.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/TeamList.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/TeamList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/TeamList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/area/UserCard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/UserCard.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/atons/AboutMe/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/atons/AboutMe/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/atons/CoworkerList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/atons/CoworkerList/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/atons/CoworkerList/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/atons/CoworkerList/style.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/atons/WorkExperienceCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/atons/WorkExperienceCard/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/atons/portifolioIndice/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/atons/portifolioIndice/style.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/portfolio/[username].tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/portifolio/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/portfolio/[slug]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/portifolio/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/portfolio/page.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/portifolio/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/portfolio/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/modals/Skill/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modals/Skill/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/modals/WorkExperience/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modals/WorkExperience/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/context/ModalContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/context/ModalContext.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/global.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,27 +101,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Jest.About Section.executor": "Run",
-    "Jest.About Section.should render the About section.executor": "Run",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "devl",
-    "ignore.virus.scanning.warn.message": "true",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "D:/Web/portfolio.dev/node_modules/jest",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "npm.format.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "D:\\Web\\portfolio.dev\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Jest.About Section.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.About Section.should render the About section.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;devl&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;D:/Web/portfolio.dev/node_modules/jest&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.format.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Web\\portfolio.dev\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Web\portfolio.dev\components\area" />
@@ -210,9 +178,8 @@
       <list>
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.format" />
-        <item itemvalue="Jest.About Section" />
         <item itemvalue="Jest.About Section.should render the About section" />
-        <item itemvalue="npm.dev" />
+        <item itemvalue="Jest.About Section" />
       </list>
     </recent_temporary>
   </component>
@@ -243,6 +210,7 @@
       <workItem from="1738273454791" duration="5899000" />
       <workItem from="1738424318510" duration="2360000" />
       <workItem from="1738593732615" duration="6013000" />
+      <workItem from="1738605443248" duration="9232000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor components and styles; introduce AcademicArea, CoursesArea, and WorkExperienceArea components for improved structure and maintainability, and update styles for better organization and readability">
       <option name="closed" value="true" />
@@ -324,6 +292,12 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/components/area/InformationArea.tsx</url>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/global.d.ts</url>
+          <line>64</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
