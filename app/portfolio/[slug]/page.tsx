@@ -170,8 +170,8 @@ type UserMock = {
   }[];
 };
 
-export default function Portifolio({ params }: Props) {
-  const unwrappedParams = use(params); // 🔥 Desembrulhando a Promise
+export default function Portfolio({ params }: Props) {
+  const unwrappedParams = use(params);
   const [userMock, setUserMock] = useState<UserMock | null>(null);
   const backgroundRef = useRef<HTMLDivElement>(null);
 
@@ -179,13 +179,13 @@ export default function Portifolio({ params }: Props) {
     if (!unwrappedParams.slug) return; // Evita chamadas inválidas
 
     const username = decodeURIComponent(unwrappedParams.slug); // Corrige espaços e caracteres especiais
-    console.log("User:", username); // Log para depuração
+    console.log("User:", username);
 
     const fetchUserMock = async () => {
       try {
-        const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/portfolio/getPortfolios?user=${username}`
-        );
+        const apiUrl = `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/portfolio/getPortfolios?user=${username}`;
+        console.log("API URL:", apiUrl);
+        const response = await fetch(apiUrl);
         const data = await response.json();
         setUserMock(data);
       } catch (error) {
