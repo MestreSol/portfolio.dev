@@ -7,7 +7,7 @@ type AboutMeProps = {
 export default function AboutMe(props: AboutMeProps) {
   return (
     <Session id="about-me" title="About Me">
-        <p className={styles.paragraph}>{props.about}</p>
+      <p className={styles.paragraph}>{props.about}</p>
     </Session>
   );
 }

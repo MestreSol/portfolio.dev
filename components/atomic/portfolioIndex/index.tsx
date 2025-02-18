@@ -8,9 +8,9 @@ type PortifolioIndiceProps = {
 export default function PortifolioIndice(props: PortifolioIndiceProps) {
   return (
     <div className={styles.index}>
-      <div className={styles.menu}>
+      <div className={styles.indexList}>
         {props.sections.map((section, index) => (
-          <div key={index} className={styles.menuItem}>
+          <div key={index} className={styles.indexItem}>
             {section}
           </div>
         ))}

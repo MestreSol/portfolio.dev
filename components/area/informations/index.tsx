@@ -3,11 +3,11 @@ import React from "react";
 import AboutMe from "@/components/atons/AboutMe";
 import { useModal } from "@/context/ModalContext";
 import Modal from "./Modal";
-import WorkExperience from "@/components/area/WorkExperienceArea";
-import AcademicArea from "@/components/area/AcademicArea";
-import CoursesArea from "@/components/area/CoursesArea";
-import SkillArea from "@/components/area/SkillArea";
-import LanguageArea from "@/components/area/LanguageArea";
+import WorkExperience from "@/components/Area/WorkExperienceArea";
+import AcademicArea from "@/components/Area/Academic/AcademicArea";
+import CoursesArea from "@/components/Area/CoursesArea";
+import SkillArea from "@/components/Area/SkillArea";
+import LanguageArea from "@/components/Area/LanguageArea";
 import ProjectArea from "./ProjectArea";
 type Props = {
   profile: Profile;

@@ -97,6 +97,7 @@
   align-items: center;
   margin-top: 15px;
 }
+
 .socialItem {
   margin: 0 10px;
 }
@@ -114,4 +115,71 @@
   color: white;
   font-size: 1.125rem;
   cursor: pointer;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .user {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+    top: 0;
+  }
+
+  .userName {
+    font-size: 20px;
+  }
+
+  .userDescription {
+    font-size: 14px;
+  }
+
+  .userMetrics .metricTitle,
+  .userMetrics .metric {
+    font-size: 14px;
+  }
+
+  .socialIcon {
+    font-size: 20px;
+  }
+
+  .followButton {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .user {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+    top: 0;
+    position: relative;
+  }
+
+  .userName {
+    font-size: 18px;
+  }
+
+  .userDescription {
+    font-size: 12px;
+  }
+
+  .userMetrics {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .userMetrics .metricTitle,
+  .userMetrics .metric {
+    font-size: 12px;
+  }
+
+  .socialIcon {
+    font-size: 18px;
+  }
+
+  .followButton {
+    font-size: 0.875rem;
+  }
 }

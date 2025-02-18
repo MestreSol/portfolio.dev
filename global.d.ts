@@ -65,6 +65,7 @@ declare global {
   type AcademicExperience = {
     id: number;
     course: string;
+    image: string;
     user: User;
     level: string;
     degree: string;

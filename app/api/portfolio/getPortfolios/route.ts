@@ -466,25 +466,22 @@ export async function GET(request: Request) {
   const portfolio = portfolios[user];
 
   if (portfolio) {
-    return NextResponse.json(
-      portfolio,
-      { status: 200, headers },
-    );
+    return NextResponse.json(portfolio, { status: 200, headers });
   } else {
     return NextResponse.json(
       { error: "User not found" },
-      { status: 404, headers }
+      { status: 404, headers },
     );
   }
 }
 
-export async function OPTIONS(){
-  return new Response(null,{
+export async function OPTIONS() {
+  return new Response(null, {
     status: 204,
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
       "Access-Control-Allow-Headers": "Content-Type",
     },
-  })
+  });
 }

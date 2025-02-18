@@ -2,23 +2,22 @@
 import React, { use, useEffect, useState, useRef } from "react";
 import styles from "../page.module.css";
 import PortifolioIndice from "@/components/atons/portifolioIndice";
-import UserCard from "@/components/area/UserCard";
-import InformationArea from "@/components/area/InformationArea";
+import UserCard from "@/components/Area/UserCard";
+import InformationArea from "@/components/Area/InformationArea";
 import { ModalProvider } from "@/context/ModalContext";
 
 type Props = {
-  params: Promise<{ slug: string }>; // Agora `params` é uma Promise
+  params: Promise<{ slug: string }>;
 };
 
 type UserMock = {
   id: number;
-  user:
-    {
-      id: number;
-      name: string;
-      email: string;
-      password: string;
-    };
+  user: {
+    id: number;
+    name: string;
+    email: string;
+    password: string;
+  };
   avatar: string;
   cover: string;
   description: string;
@@ -85,6 +84,7 @@ type UserMock = {
       role: string;
       avatar: string;
     }[];
+    image: string; // Adicionando a propriedade 'image'
   }[];
   followers: {
     id: number;
@@ -175,6 +175,13 @@ export default function Portfolio({ params }: Props) {
   const [userMock, setUserMock] = useState<UserMock | null>(null);
   const backgroundRef = useRef<HTMLDivElement>(null);
 
+  const isMobile = () => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth < 768;
+    }
+    return false;
+  };
+
   useEffect(() => {
     if (!unwrappedParams.slug) return; // Evita chamadas inválidas
 
@@ -183,7 +190,9 @@ export default function Portfolio({ params }: Props) {
 
     const fetchUserMock = async () => {
       try {
-        const apiUrl = `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/portfolio/getPortfolios?user=${username}`;
+        //const apiUrl = `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/portfolio/getPortfolios?user=${username}`;
+        const apiUrl =
+          "/api/portfolio/getPortfolios?user=Joao%20Vitor%20Ferreira";
         console.log("API URL:", apiUrl);
         const response = await fetch(apiUrl);
         const data = await response.json();
@@ -201,17 +210,19 @@ export default function Portfolio({ params }: Props) {
       <div className={styles.page}>
         <div ref={backgroundRef} className={styles.background}></div>
         <div className={styles.container}>
-          <PortifolioIndice
-            sections={[
-              "About Me",
-              "Work Experience",
-              "Academic",
-              "Courses",
-              "Languages",
-              "Skills",
-              "Projects",
-            ]}
-          />
+          {!isMobile && (
+            <PortifolioIndice
+              sections={[
+                "About Me",
+                "Work Experience",
+                "Academic",
+                "Courses",
+                "Languages",
+                "Skills",
+                "Projects",
+              ]}
+            />
+          )}
           {userMock && (
             <>
               <UserCard

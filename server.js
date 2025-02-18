@@ -3,11 +3,13 @@ import cors from "cors";
 
 const app = express();
 
-app.use(cors({
-  origin: "*", // Altere para um domínio específico em produção
-  methods: "GET,POST,OPTIONS",
-  allowedHeaders: "Content-Type",
-}));
+app.use(
+  cors({
+    origin: "*", // Altere para um domínio específico em produção
+    methods: "GET,POST,OPTIONS",
+    allowedHeaders: "Content-Type",
+  }),
+);
 
 app.get("/api/hello", (req, res) => {
   res.json({ message: "Hello World" });

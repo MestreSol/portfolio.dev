@@ -10,7 +10,7 @@
   transform: translateY(-50%);
 }
 
-.index .menu {
+.index .indexList {
   display: flex;
   justify-content: center;
   align-items: left;
@@ -18,13 +18,13 @@
   gap: 10px;
 }
 
-.index .menu .menuItem {
+.index .indexList .indexItem {
   font-size: 16px;
   font-weight: 600;
   text-align: left;
   cursor: pointer;
 }
 
-.index .menu .menuItem .active {
+.index .indexList .indexItem .active {
   color: #ff0000;
 }

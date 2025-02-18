@@ -1,0 +1,6 @@
+{
+  "version": "1",
+  "name": "Portfy - FrontEnd",
+  "type": "collection",
+  "ignore": ["node_modules", ".git"]
+}
