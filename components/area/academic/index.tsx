@@ -1,6 +1,7 @@
 import { AcademicItem } from '@/components/atomic/academicItem'
 import global from '@/global/style.module.css'
 import React from 'react'
+import style from './style.module.css'
 
 // Define the props type for the component
 type Props = {
