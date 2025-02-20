@@ -3,7 +3,7 @@ import React, { use, useEffect, useState, useRef } from 'react'
 import styles from '../page.module.css'
 import PortifolioIndice from '@/components/area/index'
 import UserCard from '@/components/area/userCard'
-import InformationArea from '@/components/area/index'
+import InformationArea from '@/components/area/information'
 import { ModalProvider } from '@/context/modal'
 
 type Props = {
@@ -170,7 +170,7 @@ type UserMock = {
 }
 
 export default function Portifolio({ params }: Props) {
-  const unwrappedParams = use(params) // 🔥 Desembrulhando a Promise
+  const unwrappedParams = use(params)
   const [userMock, setUserMock] = useState<UserMock | null>(null)
   const backgroundRef = useRef<HTMLDivElement>(null)
 
@@ -222,17 +222,7 @@ export default function Portifolio({ params }: Props) {
                 followers={userMock.followers.length}
                 projects={userMock.projects.length}
               />
-              <InformationArea
-                sections={[
-                  userMock.about,
-                  ...userMock.workExperience.map((exp) => exp.company.name),
-                  ...userMock.academicExperience.map((exp) => exp.course),
-                  ...userMock.courses.map((course) => course.name),
-                  ...userMock.languages.map((lang) => lang.name),
-                  ...userMock.skills.map((skill) => skill.name),
-                  ...userMock.projects.map((project) => project.name)
-                ]}
-              />
+              <InformationArea profile={userMock} />
             </>
           )}
         </div>
