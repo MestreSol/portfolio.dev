@@ -1,0 +1,14 @@
+.informationArea {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50vw;
+  margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .informationArea {
+    width: 90vw;
+    margin-left: 0;
+  }
+}
