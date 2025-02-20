@@ -1,28 +1,39 @@
-import type { Metadata } from 'next'
+import React from 'react'
+import { baseURL, home, person } from '@/app/resources'
+import GlobalMenu from '@/components/area/menu'
 import './globals.css'
+import Footer from '@/components/area/footer'
 
-export const metadata: Metadata = {
-  title: 'Systempunk',
-  description: 'A collaborative worldbuilding project',
-  keywords: [
-    'worldbuilding',
-    'collaborative',
-    'fiction',
-    'scifi',
-    'fantasy',
-    'universe',
-    'timeline',
-    'projects',
-    'contribute',
-    'unreal',
-    'unity',
-    'games'
-  ],
-  icons: {
-    icon: '/favicon.ico'
+export async function generateMetadata() {
+  return {
+    metadataBase: new URL(`https://${baseURL}`),
+    title: {
+      default: home.title,
+      template: '%s | Portfy'
+    },
+    description: home.description,
+    openGraph: {
+      title: `${person.firstName}'s Portfolio`,
+      description: 'Portfolio website showcasing my work.',
+      url: baseURL,
+      siteName: `${person.firstName}'s Portfolio`,
+      locale: 'en_US',
+      type: 'website'
+      //image: ["/api/og?title=portfy"],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1
+      }
+    }
   }
 }
-
 export default function RootLayout({
   children
 }: Readonly<{
@@ -30,7 +41,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <GlobalMenu></GlobalMenu>
+        {children}
+        <Footer></Footer>
+      </body>
     </html>
   )
 }

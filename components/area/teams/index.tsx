@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import styles from './TeamList.module.css'
+import styles from './style.module.css'
 import global from '@/global/style.module.css'
 
 type Props = {

@@ -1,5 +1,5 @@
 import global from '@/global/style.module.css'
-import WorkExperienceCard from '@/components/atons/WorkExperienceCard'
+import WorkExperienceCard from '@/components/cards/workExperience'
 
 type Props = {
   experience: WorkExperience[]

@@ -1,14 +1,15 @@
-import styles from './InformationArea.module.css'
+import styles from './style.module.css'
 import React from 'react'
-import AboutMe from '@/components/atons/AboutMe'
-import { useModal } from '@/context/ModalContext'
-import Modal from './Modal'
-import WorkExperience from '@/components/area/WorkExperienceArea'
-import AcademicArea from '@/components/area/AcademicArea'
-import CoursesArea from '@/components/area/CoursesArea'
-import SkillArea from '@/components/area/SkillArea'
-import LanguageArea from '@/components/area/LanguageArea'
-import ProjectArea from './ProjectArea'
+import AboutMe from '@/components/area/about'
+import { useModal } from '@/context/modal'
+import Modal from '@/components/modals/skills'
+import WorkExperience from '@/components/area/workExperience'
+import { Academic } from '@/components/area/academic'
+import CoursesArea from '@/components/area/courses'
+import SkillArea from '@/components/area/skills'
+import LanguageArea from '@/components/area/languages'
+import ProjectArea from '@/components/area/projects'
+
 type Props = {
   profile: Profile
 }
@@ -36,7 +37,7 @@ export default function InformationArea({ profile }: Props) {
         <WorkExperience experience={profile.workExperience} />
       )}
       {profile.academicExperience && (
-        <AcademicArea academicArray={profile.academicExperience} />
+        <Academic academicArray={profile.academicExperience} />
       )}
       {profile.courses && <CoursesArea courses={profile.courses} />}
       {profile.languages ? (

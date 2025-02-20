@@ -2,10 +2,10 @@
 import React from 'react'
 import styles from './page.module.css'
 import { useEffect, useRef } from 'react'
-import index from '@/components/atomic/index'
-import UserCard from '@/components/area/UserCard'
-import InformationArea from '@/components/area/InformationArea'
-import { ModalProvider } from '@/context/ModalContext'
+import UserCard from '@/components/area/userCard'
+import InformationArea from '@/components/area/information'
+import { ModalProvider } from '@/context/modal'
+import PortifolioIndice from '@/components/area/index'
 
 export default function Portifolio() {
   //const [isRecModal, setIsRecModal] = useState(false);

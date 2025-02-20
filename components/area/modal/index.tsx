@@ -1,6 +1,6 @@
 import React from 'react'
-import WorkExperienceModal from '@/components/modals/WorkExperience'
-import SkillModal from '@/components/modals/Skill'
+import WorkExperienceModal from '@/components/modals/workExperience'
+import SkillModal from '@/components/modals/skills'
 
 type ModalProps = {
   isOpen: boolean

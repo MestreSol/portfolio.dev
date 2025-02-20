@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './styles.module.css'
-import CoworkerList from '@/components/atons/CoworkerList'
+import CoworkerList from '@/components/area/coworkers'
 
 type Props = {
   experience: WorkExperience

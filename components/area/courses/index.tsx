@@ -1,3 +1,4 @@
+import CoursesItem from '@/components/atomic/coursesItem'
 import styles from './CoursesArea.module.css'
 import global from '@/global/style.module.css'
 import React from 'react'
@@ -14,20 +15,7 @@ export default function CoursesArea({ courses }: Props) {
       <div className={global.sessionTitle}>Licenses and Courses</div>
       <div className={global.sessionContent}>
         {courses.map((course) => (
-          <div className={styles.license} key={course.id}>
-            <div className={styles.licenseHeader}>
-              <div className={styles.licenseInfo}>
-                <div className={styles.licenseName}>{course.name}</div>
-                <div className={styles.licensor}>{course.emissor}</div>
-              </div>
-              <div className={styles.date}>
-                {course.startDate} - {course.endDate}
-              </div>
-            </div>
-            <div className={styles.licenseContent}>
-              <p className={styles.licenseDescription}>{course.description}</p>
-            </div>
-          </div>
+          <CoursesItem course={course} key={course.id} />
         ))}
       </div>
     </section>
