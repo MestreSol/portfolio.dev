@@ -8,7 +8,7 @@ type Props = {
 }
 
 // Functional component to render the academic area
-export default function AcademicArea({ academicArray }: Props) {
+function Academic({ academicArray }: Props) {
   return (
     <section className={global.session} id={'academic'}>
       <div className={global.sessionTitle}>Academic</div>
@@ -44,3 +44,5 @@ export default function AcademicArea({ academicArray }: Props) {
     </section>
   )
 }
+
+export { Academic }
