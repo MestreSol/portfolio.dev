@@ -194,6 +194,7 @@ export default function Portfolio({ params }: Props) {
         const apiUrl =
           "/api/portfolio/getPortfolios?user=Joao%20Vitor%20Ferreira";
         console.log("API URL:", apiUrl);
+
         const response = await fetch(apiUrl);
         const data = await response.json();
         setUserMock(data);

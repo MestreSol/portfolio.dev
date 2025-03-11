@@ -98,7 +98,7 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
 ## Stack utilizada
 
 - Front-End: Next.js, TypeScript.
-- Back-End: Python, Prisma ORM.
+- Back-End: Python, Prisma ORM. - Em revisão
 - Banco de Dados: DynamoDB.
 - Autenticação: AWS Cognito.
 - Hospedagem: Vercel.
