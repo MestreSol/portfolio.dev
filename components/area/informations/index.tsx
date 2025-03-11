@@ -1,33 +1,20 @@
-import styles from "./InformationArea.module.css";
+import styles from "./style.module.css";
 import React from "react";
-import AboutMe from "@/components/atons/AboutMe";
 import { useModal } from "@/context/ModalContext";
-import Modal from "./Modal";
-import WorkExperience from "@/components/Area/WorkExperienceArea";
-import AcademicArea from "@/components/Area/Academic/AcademicArea";
-import CoursesArea from "@/components/Area/CoursesArea";
-import SkillArea from "@/components/Area/SkillArea";
-import LanguageArea from "@/components/Area/LanguageArea";
-import ProjectArea from "./ProjectArea";
+import AboutMe from "@/components/atomic/aboutMe";
+import WorkExperience from "../workExperience";
+import AcademicArea from "@/components/area/academic";
+import CoursesArea from "../courses";
+import LanguageArea from "../languages";
+import SkillArea from "../skills";
+import ProjectArea from "../projects";
+import Modal from "../modal";
 type Props = {
   profile: Profile;
 };
 
 export default function InformationArea({ profile }: Props) {
   const { isModalOpen, openModal, closeModal } = useModal();
-
-  const handleOpenModal = (type: string, id: number) => {
-    if (type === "workExp") {
-      const experience = profile.workExperience.find(
-        (experience) => experience.id === id,
-      );
-      console.log(experience);
-    } else if (type === "recomendation") {
-      console.log("Recomendation");
-    }
-
-    openModal();
-  };
 
   return (
     <div className={styles.informationArea}>
@@ -47,6 +34,7 @@ export default function InformationArea({ profile }: Props) {
       <Modal
         isOpen={isModalOpen}
         onClose={closeModal}
+        onOpen={openModal}
         skill={profile.skills[0]}
       />
     </div>

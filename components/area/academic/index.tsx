@@ -1,6 +1,6 @@
 import React from "react";
-import Session from "@/components/atons/Session";
-import AcademicCard from "@/components/atons/AcademicCard";
+import Session from "@/components/atomic/session";
+import AcademicCard from "@/components/atomic/academic/Card";
 
 // Define the props type for the component
 type Props = {

@@ -1,5 +1,3 @@
-// app/api/portfolio/getPortfolios/route.ts
-
 import { NextResponse } from "next/server";
 
 const portfolios: Record<string, Profile> = {
@@ -108,6 +106,7 @@ const portfolios: Record<string, Profile> = {
             avatar: "https://picsum.photos/400",
           },
         ],
+        image: ""
       },
     ],
     followers: [
@@ -388,6 +387,7 @@ const portfolios: Record<string, Profile> = {
         endDate: "2019-12-31",
         activities: [],
         coWorkers: [],
+        image: ""
       },
       {
         id: 2,
@@ -407,21 +407,19 @@ const portfolios: Record<string, Profile> = {
         activities: [
           {
             id: 1,
-            description:
-              "Scientific initiation: Development of a simple system for controlling patient information connected to cloud structures, which can be connected to peripherals made on the basis of the ESP-32 for clinical monitoring, for example.",
+            description: "Scientific initiation: Development of a simple system for controlling patient information connected to cloud structures, which can be connected to peripherals made on the basis of the ESP-32 for clinical monitoring, for example.",
           },
           {
             id: 2,
-            description:
-              "Python Workshop: A workshop on Python programming language, with a focus on data analysis.",
+            description: "Python Workshop: A workshop on Python programming language, with a focus on data analysis.",
           },
           {
             id: 3,
-            description:
-              "Monitoring: Monitoring of the discipline of Programming Logic, C, DataBase and Programming Oriented Object, with the objective of assisting students in the understanding of the content and the resolution of exercises.",
+            description: "Monitoring: Monitoring of the discipline of Programming Logic, C, DataBase and Programming Oriented Object, with the objective of assisting students in the understanding of the content and the resolution of exercises.",
           },
         ],
         coWorkers: [],
+        image: ""
       },
     ],
     followers: [],
