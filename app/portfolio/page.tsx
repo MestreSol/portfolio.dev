@@ -2,10 +2,10 @@
 import React from "react";
 import styles from "./page.module.css";
 import { useEffect, useRef } from "react";
-import PortifolioIndice from "@/components/atons/portifolioIndice";
-import UserCard from "@/components/Area/UserCard";
-import InformationArea from "@/components/Area/InformationArea";
 import { ModalProvider } from "@/context/ModalContext";
+import PortifolioIndice from "@/components/atomic/portfolioIndex";
+import UserCard from "@/components/area/userCards";
+import InformationArea from "@/components/area/informations";
 
 export default function Portifolio() {
   //const [isRecModal, setIsRecModal] = useState(false);
@@ -114,6 +114,7 @@ export default function Portifolio() {
             avatar: "https://picsum.photos/400",
           },
         ],
+        image: ""
       },
     ],
     followers: [

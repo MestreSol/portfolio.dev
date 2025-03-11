@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import style from "./GlobalMenu.module.css";
+import style from "./style.module.css";
 
 export default function GlobalMenu() {
   return (

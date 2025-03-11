@@ -1,8 +1,8 @@
 import React from "react";
 import { baseURL, home, person } from "@/app/resources";
-import GlobalMenu from "@/components/Area/GlobalMenu";
+import GlobalMenu from "@/components/area/menu";
 import "./globals.css";
-import Footer from "@/components/Area/Footer";
+import Footer from "@/components/area/footer";
 
 export async function generateMetadata() {
   return {

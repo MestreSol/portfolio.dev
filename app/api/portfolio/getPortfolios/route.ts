@@ -2,8 +2,6 @@
 
 import { NextResponse } from "next/server";
 
-type Data = Profile | { error: string };
-
 const portfolios: Record<string, Profile> = {
   "Charlie Brown": {
     id: 1,

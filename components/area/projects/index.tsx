@@ -2,8 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styles from "./ProjectArea.module.css";
 import global from "@/global/style.module.css";
-import CoworkerList from "../atons/CoworkerList";
-import TeamList from "./TeamList";
+import TeamList from "../teams";
 
 type Props = {
   projects: Project[];

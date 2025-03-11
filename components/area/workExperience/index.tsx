@@ -1,5 +1,5 @@
+import WorkExperienceCard from "@/components/atomic/workExperienceCard";
 import global from "@/global/style.module.css";
-import WorkExperienceCard from "@/components/atons/WorkExperienceCard";
 
 type Props = {
   experience: WorkExperience[];

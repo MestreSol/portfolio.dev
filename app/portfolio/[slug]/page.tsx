@@ -1,10 +1,10 @@
 "use client";
 import React, { use, useEffect, useState, useRef } from "react";
 import styles from "../page.module.css";
-import PortifolioIndice from "@/components/atons/portifolioIndice";
-import UserCard from "@/components/Area/UserCard";
-import InformationArea from "@/components/Area/InformationArea";
 import { ModalProvider } from "@/context/ModalContext";
+import PortifolioIndice from "@/components/atomic/portfolioIndex";
+import UserCard from "@/components/area/userCards";
+import InformationArea from "@/components/area/informations";
 
 type Props = {
   params: Promise<{ slug: string }>;

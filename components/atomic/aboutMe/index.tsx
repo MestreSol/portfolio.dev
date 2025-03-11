@@ -1,6 +1,6 @@
+import Session from "@/components/atomic/session";
 import styles from "./style.module.css";
 import React from "react";
-import Session from "../Session";
 type AboutMeProps = {
   about: string;
 };
