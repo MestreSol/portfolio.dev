@@ -1,20 +1,20 @@
-import styles from "./style.module.css";
-import React from "react";
-import { useModal } from "@/context/ModalContext";
-import AboutMe from "@/components/atomic/aboutMe";
-import WorkExperience from "../workExperience";
-import AcademicArea from "@/components/area/academic";
-import CoursesArea from "../courses";
-import LanguageArea from "../languages";
-import SkillArea from "../skills";
-import ProjectArea from "../projects";
-import Modal from "../modal";
+import styles from './style.module.css'
+import React from 'react'
+import { useModal } from '@/context/ModalContext'
+import AboutMe from '@/components/atomic/aboutMe'
+import WorkExperience from '../workExperience'
+import AcademicArea from '@/components/area/academic'
+import CoursesArea from '../courses'
+import LanguageArea from '../languages'
+import SkillArea from '../skills'
+import ProjectArea from '../projects'
+import Modal from '../modal'
 type Props = {
-  profile: Profile;
-};
+  profile: Profile
+}
 
 export default function InformationArea({ profile }: Props) {
-  const { isModalOpen, openModal, closeModal } = useModal();
+  const { isModalOpen, openModal, closeModal } = useModal()
 
   return (
     <div className={styles.informationArea}>
@@ -38,5 +38,5 @@ export default function InformationArea({ profile }: Props) {
         skill={profile.skills[0]}
       />
     </div>
-  );
+  )
 }

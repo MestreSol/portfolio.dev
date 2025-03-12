@@ -1,12 +1,12 @@
-import React from "react";
-import styles from "@/app/portfolio/page.module.css";
+import React from 'react'
+import styles from '@/app/portfolio/page.module.css'
 type ModalProps = {
-  isOpen: boolean;
-  onClose: () => void;
-  skill: Skill;
-};
+  isOpen: boolean
+  onClose: () => void
+  skill: Skill
+}
 export default function SkillModal({ isOpen, onClose, skill }: ModalProps) {
-  if (!isOpen) return null;
+  if (!isOpen) return null
 
   return (
     <div className={styles.modalBackground} onClick={onClose}>
@@ -29,5 +29,5 @@ export default function SkillModal({ isOpen, onClose, skill }: ModalProps) {
         </div>
       </div>
     </div>
-  );
+  )
 }

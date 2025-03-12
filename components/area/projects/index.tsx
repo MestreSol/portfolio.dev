@@ -1,12 +1,12 @@
-import Image from "next/image";
-import React from "react";
-import styles from "./style.module.css";
-import global from "@/global/style.module.css";
-import TeamList from "../teams";
+import Image from 'next/image'
+import React from 'react'
+import styles from './style.module.css'
+import global from '@/global/style.module.css'
+import TeamList from '../teams'
 
 type Props = {
-  projects: Project[];
-};
+  projects: Project[]
+}
 export default function ProjectArea({ projects }: Props) {
   return (
     <section className={styles.projects}>
@@ -39,5 +39,5 @@ export default function ProjectArea({ projects }: Props) {
         </ul>
       </div>
     </section>
-  );
+  )
 }

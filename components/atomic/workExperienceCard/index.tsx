@@ -1,10 +1,10 @@
-import React from "react";
-import styles from "./styles.module.css";
-import CoworkerList from "@/components/atomic/coworkerList";
+import React from 'react'
+import styles from './styles.module.css'
+import CoworkerList from '@/components/atomic/coworkerList'
 
 type Props = {
-  experience: WorkExperience;
-};
+  experience: WorkExperience
+}
 export default function WorkExperienceCard({ experience }: Props) {
   return (
     <div
@@ -35,5 +35,5 @@ export default function WorkExperienceCard({ experience }: Props) {
         )}
       </div>
     </div>
-  );
+  )
 }

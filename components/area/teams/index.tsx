@@ -1,10 +1,10 @@
-import Image from "next/image";
-import React from "react";
-import styles from "./style.module.css";
+import Image from 'next/image'
+import React from 'react'
+import styles from './style.module.css'
 
 type Props = {
-  teams: Team[];
-};
+  teams: Team[]
+}
 export default function TeamList({ teams }: Props) {
   return (
     <div className={styles.teamList}>
@@ -24,5 +24,5 @@ export default function TeamList({ teams }: Props) {
         </div>
       ))}
     </div>
-  );
+  )
 }

@@ -1,15 +1,15 @@
-import styles from "./style.module.css";
-import Image from "next/image";
-import React from "react";
+import styles from './style.module.css'
+import Image from 'next/image'
+import React from 'react'
 type User = {
-  name: string;
-  description: string;
-  cover: string;
-  avatar: string;
-  nodes: number;
-  followers: number;
-  projects: number;
-};
+  name: string
+  description: string
+  cover: string
+  avatar: string
+  nodes: number
+  followers: number
+  projects: number
+}
 export default function UserCard(props: User) {
   return (
     <div className={styles.user}>
@@ -17,7 +17,7 @@ export default function UserCard(props: User) {
         <div className={styles.userCard}>
           <Image
             src={props.cover}
-            alt={"Cover"}
+            alt={'Cover'}
             className={styles.coverImage}
             width={200}
             height={200}
@@ -85,5 +85,5 @@ export default function UserCard(props: User) {
         <button className={styles.followButton}>Follow</button>
       </div>
     </div>
-  );
+  )
 }

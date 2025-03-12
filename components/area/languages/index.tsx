@@ -1,16 +1,16 @@
-import styles from "./style.module.css";
-import global from "@/global/style.module.css";
-import React from "react";
+import styles from './style.module.css'
+import global from '@/global/style.module.css'
+import React from 'react'
 
 type Props = {
-  languages: Language[];
-};
+  languages: Language[]
+}
 export default function LanguageArea({ languages }: Props) {
   const getProgressClass = (proficiency: number) => {
-    if (proficiency < 33) return styles.low;
-    if (proficiency < 66) return styles.medium;
-    return styles.high;
-  };
+    if (proficiency < 33) return styles.low
+    if (proficiency < 66) return styles.medium
+    return styles.high
+  }
   return (
     <section className={styles.skills}>
       <div className={global.sessionTitle}>Languages</div>
@@ -33,5 +33,5 @@ export default function LanguageArea({ languages }: Props) {
         </ul>
       </div>
     </section>
-  );
+  )
 }

@@ -1,8 +1,8 @@
-import Image from "next/image";
-import styles from "./style.module.css";
+import Image from 'next/image'
+import styles from './style.module.css'
 type Props = {
-  coWorkers: CoWorker[];
-};
+  coWorkers: CoWorker[]
+}
 export default function CoworkerList(props: Props) {
   return (
     <div className={styles.co_workers}>
@@ -11,7 +11,7 @@ export default function CoworkerList(props: Props) {
           <li className={styles.co_worker} key={coWorker.id}>
             <Image
               src={coWorker.avatar}
-              alt={"co-worker"}
+              alt={'co-worker'}
               width={32}
               height={32}
               className={styles.co_workerImage}
@@ -25,5 +25,5 @@ export default function CoworkerList(props: Props) {
         ))}
       </ul>
     </div>
-  );
+  )
 }

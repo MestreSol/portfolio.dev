@@ -1,10 +1,10 @@
-import style from "./style.module.css";
-import React from "react";
+import style from './style.module.css'
+import React from 'react'
 
 type SessionProps = {
-  id: string;
-  title: string;
-  children: React.ReactNode;
+  id: string
+  title: string
+  children: React.ReactNode
 }
 
 // Component to render a session with a title and content
@@ -19,5 +19,5 @@ export default function Session(props: SessionProps) {
       <div className={style.sessionTitle}>{props.title}</div>
       <div className={style.sessionContent}>{props.children}</div>
     </section>
-  );
+  )
 }

@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import style from "./style.module.css";
+import Image from 'next/image'
+import Link from 'next/link'
+import style from './style.module.css'
 
 export default function GlobalMenu() {
   return (
@@ -18,7 +18,7 @@ export default function GlobalMenu() {
       <div className={style.menuArea}>
         <ul className={style.menuList}>
           <li>
-            <Link href="/" className={style.menuItem + " " + style.active}>
+            <Link href="/" className={style.menuItem + ' ' + style.active}>
               <Image
                 className={style.menuIcon}
                 src="/icons/home.svg"
@@ -72,5 +72,5 @@ export default function GlobalMenu() {
         <span>John Doe</span>
       </div>
     </nav>
-  );
+  )
 }

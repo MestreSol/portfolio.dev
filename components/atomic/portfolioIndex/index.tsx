@@ -1,9 +1,9 @@
-import styles from "./style.module.css";
-import React from "react";
+import styles from './style.module.css'
+import React from 'react'
 
 type PortifolioIndiceProps = {
-  sections: string[];
-};
+  sections: string[]
+}
 
 export default function PortifolioIndice(props: PortifolioIndiceProps) {
   return (
@@ -16,5 +16,5 @@ export default function PortifolioIndice(props: PortifolioIndiceProps) {
         ))}
       </div>
     </div>
-  );
+  )
 }

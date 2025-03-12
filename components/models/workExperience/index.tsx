@@ -1,16 +1,16 @@
-import Image from "next/image";
-import React from "react";
-import styles from "@/app/portfolio/page.module.css";
+import Image from 'next/image'
+import React from 'react'
+import styles from '@/app/portfolio/page.module.css'
 
 type ModalProps = {
-  isOpen: boolean;
-  onClose: () => void;
-  experience: WorkExperience;
-};
+  isOpen: boolean
+  onClose: () => void
+  experience: WorkExperience
+}
 
 export default function WorkExperienceModal({
   onClose,
-  experience,
+  experience
 }: ModalProps) {
   return (
     <div className={styles.modalBackground} onClick={onClose}>
@@ -38,7 +38,7 @@ export default function WorkExperienceModal({
               <div className={styles.coWorker} key={coWorker.id}>
                 <Image
                   src={coWorker.avatar}
-                  alt={"co-worker"}
+                  alt={'co-worker'}
                   width={32}
                   height={32}
                   className={styles.coWorkerImage}
@@ -53,5 +53,5 @@ export default function WorkExperienceModal({
         </div>
       </div>
     </div>
-  );
+  )
 }

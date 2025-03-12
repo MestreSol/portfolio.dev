@@ -1,11 +1,11 @@
-import styles from "./style.module.css";
-import global from "@/global/style.module.css";
-import React from "react";
+import styles from './style.module.css'
+import global from '@/global/style.module.css'
+import React from 'react'
 
 // Define the props type for the component
 type Props = {
-  courses: Course[];
-};
+  courses: Course[]
+}
 
 // Functional component to render the courses area
 export default function CoursesArea({ courses }: Props) {
@@ -31,5 +31,5 @@ export default function CoursesArea({ courses }: Props) {
         ))}
       </div>
     </section>
-  );
+  )
 }
