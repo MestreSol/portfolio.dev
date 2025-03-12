@@ -13,7 +13,7 @@ on:
 jobs:
   test:
     name: Run Jest
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     container:
       image: node:18-alpine
       options: --shm-size=2g
@@ -29,6 +29,6 @@ jobs:
       run: npm install
 
     - name: Run Jest Tests
-      run: npm test -- --ci --converage
+      run: npm test -- --ci --coverage
       env:
         CI: true
