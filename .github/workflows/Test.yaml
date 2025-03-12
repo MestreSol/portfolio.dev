@@ -1,0 +1,34 @@
+name: Run Tests
+
+on:
+  push:
+    branches:
+      - main
+      - devl
+  pull_request:
+    branches:
+      - main
+      - devl
+
+jobs:
+  test:
+    name: Run Jest
+    runs-on: ubuntu-latest
+    container:
+      image: node:18-alpine
+      options: --shm-size=2g
+
+    steps:
+      - name: Configure
+        run: apk add --no-cache bash git
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Jest Tests
+        run: npm test -- --ci --coverage
+        env:
+          CI: true
