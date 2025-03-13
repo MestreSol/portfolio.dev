@@ -1,39 +1,39 @@
-const baseURL = "portfy.com";
+const baseURL = 'portfy.com'
 
 const routes = {
-  "/": true,
-  "/nodes": true,
-  "/nodes/:id": true,
-  "/projects": true,
-  "/projects/:id": true,
-  "/notices": true,
-  "/notices/:id": true,
-  "/portfolio": true,
-  "/portfolio/:id": true,
-};
+  '/': true,
+  '/nodes': true,
+  '/nodes/:id': true,
+  '/projects': true,
+  '/projects/:id': true,
+  '/notices': true,
+  '/notices/:id': true,
+  '/portfolio': true,
+  '/portfolio/:id': true
+}
 
 const protectedRoutes = {
-  "/portfolio/:id/edit": true,
-};
+  '/portfolio/:id/edit': true
+}
 
 const style = {
-  theme: "dark", // dark | light
-  neutral: "gray", // sand | gray | slate
-  brand: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-  accent: "red", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-  solid: "contrast", // color | contrast
-  solidStyle: "plastic", // flat | plastic
-  border: "conservative", // rounded | playful | conservative
-  surface: "translucent", // filled | translucent
-  transition: "micro", // all | micro | macro
-};
+  theme: 'dark', // dark | light
+  neutral: 'gray', // sand | gray | slate
+  brand: 'cyan', // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+  accent: 'red', // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+  solid: 'contrast', // color | contrast
+  solidStyle: 'plastic', // flat | plastic
+  border: 'conservative', // rounded | playful | conservative
+  surface: 'translucent', // filled | translucent
+  transition: 'micro' // all | micro | macro
+}
 
 const effects = {
   mask: {
     cursor: true,
     x: 0,
     y: 0,
-    radius: 75,
+    radius: 75
   },
   gradient: {
     display: true,
@@ -42,41 +42,41 @@ const effects = {
     width: 100,
     height: 100,
     tilt: 0,
-    colorStart: "brand-background-strong",
-    colorEnd: "static-transparent",
-    opacity: 50,
+    colorStart: 'brand-background-strong',
+    colorEnd: 'static-transparent',
+    opacity: 50
   },
   dots: {
     display: true,
     size: 2,
-    color: "brand-on-background-weak",
-    opacity: 20,
+    color: 'brand-on-background-weak',
+    opacity: 20
   },
   lines: {
     display: false,
-    color: "neutral-alpha-weak",
-    opacity: 100,
+    color: 'neutral-alpha-weak',
+    opacity: 100
   },
   grid: {
     display: false,
-    color: "neutral-alpha-weak",
-    opacity: 100,
-  },
-};
+    color: 'neutral-alpha-weak',
+    opacity: 100
+  }
+}
 
 const display = {
   location: true,
-  time: true,
-};
+  time: true
+}
 
 const mailchimp = {
-  action: "https://url/subscribe/post?parameters",
+  action: 'https://url/subscribe/post?parameters',
   effects: {
     mask: {
       cursor: false,
       x: 100,
       y: 0,
-      radius: 100,
+      radius: 100
     },
     gradient: {
       display: true,
@@ -85,27 +85,27 @@ const mailchimp = {
       width: 100,
       height: 100,
       tilt: -45,
-      colorStart: "accent-background-strong",
-      colorEnd: "static-transparent",
-      opacity: 100,
+      colorStart: 'accent-background-strong',
+      colorEnd: 'static-transparent',
+      opacity: 100
     },
     dots: {
       display: false,
       size: 24,
-      color: "brand-on-background-weak",
-      opacity: 100,
+      color: 'brand-on-background-weak',
+      opacity: 100
     },
     lines: {
       display: false,
-      color: "neutral-alpha-weak",
-      opacity: 100,
+      color: 'neutral-alpha-weak',
+      opacity: 100
     },
     grid: {
       display: true,
-      color: "neutral-alpha-weak",
-      opacity: 100,
-    },
-  },
-};
+      color: 'neutral-alpha-weak',
+      opacity: 100
+    }
+  }
+}
 
-export { baseURL, routes, protectedRoutes, style, effects, display, mailchimp };
+export { baseURL, routes, protectedRoutes, style, effects, display, mailchimp }

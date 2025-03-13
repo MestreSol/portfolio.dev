@@ -5,14 +5,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32258c14-9157-4b31-a89f-b60eec955752" name="Changes" comment="Add test for About component and update package.json to include watch mode for Jest">
+      <change afterPath="$PROJECT_DIR$/components/atons/AcademicCard.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/atons/AcademicCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/atons/AcademicContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/atons/AcademicHeader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/portfolio/[username].tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/portifolio/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/portfolio/[slug]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/portifolio/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/portfolio/page.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/portifolio/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/portfolio/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/og/router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/og/router.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/portfolio/getPortfolios/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/portfolio/getPortfolios/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/not-found.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/not-found.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/portfolio/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/portfolio/[slug]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/portfolio/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/portfolio/page.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/portfolio/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/portfolio/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/AcademicArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/AcademicArea.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/AcademicArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/AcademicArea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/CoursesArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/CoursesArea.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/CoursesArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/CoursesArea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/Footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/Footer.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/GlobalMenu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/GlobalMenu.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/GlobalMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/GlobalMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/InformationArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/InformationArea.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/InformationArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/InformationArea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/LanguageArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/LanguageArea.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/LanguageArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/LanguageArea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/Modal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/Modal.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/Modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/Modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/ProjectArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/ProjectArea.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/ProjectArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/ProjectArea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/SkillArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/SkillArea.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/SkillArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/SkillArea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/TeamList.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/TeamList.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/TeamList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/TeamList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/UserCard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/UserCard.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/UserCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/UserCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/WorkExperienceArea.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/WorkExperienceArea.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/area/WorkExperienceArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/area/WorkExperienceArea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/atons/AboutMe/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/atons/AboutMe/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/atons/CoworkerList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/atons/CoworkerList/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/atons/CoworkerList/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/atons/CoworkerList/style.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/atons/WorkExperienceCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/atons/WorkExperienceCard/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/atons/WorkExperienceCard/styles.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/atons/WorkExperienceCard/styles.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/atons/portifolioIndice/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/atons/portifolioIndice/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/atons/portifolioIndice/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/atons/portifolioIndice/style.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/modals/Skill/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modals/Skill/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/modals/WorkExperience/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modals/WorkExperience/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/context/ModalContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/context/ModalContext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eslint.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/eslint.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/global.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/global/style.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prettier.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/prettier.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,8 +137,8 @@
   </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/MestreSol/portfolio.dev.git&quot;,
-    &quot;accountId&quot;: &quot;24e4e63e-0b4f-4e7a-b757-1b660c1be4e1&quot;
+    &quot;url&quot;: &quot;https://github.com/MestreSol/portfolio.dev&quot;,
+    &quot;accountId&quot;: &quot;0842975f-0804-4dce-b98b-8c5ce3659921&quot;
   }
 }</component>
   <component name="PackageJsonUpdateNotifier">
@@ -105,9 +160,11 @@
   &quot;keyToString&quot;: {
     &quot;Jest.About Section.executor&quot;: &quot;Run&quot;,
     &quot;Jest.About Section.should render the About section.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;devl&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/systempunk-forum&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -118,12 +175,13 @@
     &quot;npm.dev.executor&quot;: &quot;Run&quot;,
     &quot;npm.format.executor&quot;: &quot;Run&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\Web\\portfolio.dev\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;F:\\portfolio.dev\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\portfolio.dev\components\atons" />
       <recent name="D:\Web\portfolio.dev\components\area" />
       <recent name="D:\Web\portfolio.dev\public\icons" />
     </key>
@@ -186,7 +244,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.120" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
       </set>
     </attachedChunks>
   </component>
@@ -211,6 +269,13 @@
       <workItem from="1738424318510" duration="2360000" />
       <workItem from="1738593732615" duration="6013000" />
       <workItem from="1738605443248" duration="9232000" />
+      <workItem from="1738943734592" duration="157000" />
+      <workItem from="1738943920500" duration="663000" />
+      <workItem from="1738948701177" duration="8275000" />
+      <workItem from="1739034048857" duration="4011000" />
+      <workItem from="1739286611398" duration="145000" />
+      <workItem from="1739896889657" duration="375000" />
+      <workItem from="1739901539392" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor components and styles; introduce AcademicArea, CoursesArea, and WorkExperienceArea components for improved structure and maintainability, and update styles for better organization and readability">
       <option name="closed" value="true" />
@@ -296,7 +361,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/global.d.ts</url>
           <line>64</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
