@@ -13,19 +13,20 @@ services:
 
   app:
     build:
-      context: .
-      dockerfile: dockerfile
+      context: ..
+      dockerfile: infra/dockerfile
     restart: always
     environment:
       NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
       NEXT_PUBLIC_BASE_URL: ${NEXT_PUBLIC_BASE_URL}
+      NODE_ENV: development
     ports:
       - '3000:3000'
     depends_on:
       - database
       - redis
     volumes:
-      - ./data/app:app
+      - ..:/app
       - /app/node_modules
       - /app/.next
 
@@ -53,5 +54,6 @@ services:
     ports:
       - '5672:5672'
       - '15672:15672'
+
 volumes:
   postgres_data:
